@@ -1,0 +1,329 @@
+{
+  "categories": [
+    {
+      "id": "category1",
+      "title": "Ορεκτικά",
+      "menuItemKategoryTranslations": [
+        {
+          "languageCode": "gr",
+          "title": "Ορεκτικά",
+          "subtitle": "Ξεκινήστε το γεύμα σας με νόστιμα ορεκτικά."
+        }
+      ],
+      "menuItems": [
+        {
+          "id": "item1",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Μπρουσκέτα",
+              "description": "Ψωμί με φρέσκια ντομάτα, βασιλικό και ελαιόλαδο.",
+              "allergies": "Περιέχει γλουτένη.",
+              "price": "4.50"
+            }
+          ]
+        },
+        {
+          "id": "item2",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Σκορδόψωμο",
+              "description": "Κριτσανιστό ψωμί με σκόρδο και βούτυρο.",
+              "allergies": "Περιέχει γλουτένη και γαλακτοκομικά.",
+              "price": "3.50"
+            }
+          ]
+        },
+        {
+          "id": "item3",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Γεμιστά Μανιτάρια",
+              "description": "Μανιτάρια γεμιστά με τυρί και μυρωδικά.",
+              "allergies": "Περιέχει γαλακτοκομικά.",
+              "price": "5.00"
+            }
+          ]
+        },
+        {
+          "id": "item4",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Καλαμαράκια Τηγανιτά",
+              "description": "Φρέσκα τηγανητά καλαμαράκια με λεμόνι.",
+              "allergies": "Περιέχει θαλασσινά και γλουτένη.",
+              "price": "7.50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category2",
+      "title": "Κυρίως Πιάτα",
+      "menuItemKategoryTranslations": [
+        {
+          "languageCode": "gr",
+          "title": "Κυρίως Πιάτα",
+          "subtitle": "Απολαύστε μια ποικιλία από κυρίως πιάτα."
+        }
+      ],
+      "menuItems": [
+        {
+          "id": "item5",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Μουσακάς",
+              "description": "Παραδοσιακός μουσακάς με μελιτζάνες, κιμά και μπεσαμέλ.",
+              "allergies": "Περιέχει γλουτένη και γαλακτοκομικά.",
+              "price": "9.00"
+            }
+          ]
+        },
+        {
+          "id": "item6",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Σουβλάκι",
+              "description": "Χοιρινό σουβλάκι σερβιρισμένο με πίτα και τζατζίκι.",
+              "allergies": "Περιέχει γλουτένη.",
+              "price": "8.00"
+            }
+          ]
+        },
+        {
+          "id": "item7",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Στιφάδο",
+              "description": "Μοσχαράκι μαγειρεμένο με κρεμμύδια και κόκκινο κρασί.",
+              "allergies": "Δεν περιέχει αλλεργιογόνα.",
+              "price": "10.50"
+            }
+          ]
+        },
+        {
+          "id": "item8",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Παστίτσιο",
+              "description": "Ζυμαρικά με κιμά και κρέμα μπεσαμέλ.",
+              "allergies": "Περιέχει γλουτένη και γαλακτοκομικά.",
+              "price": "8.50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category3",
+      "title": "Σαλάτες",
+      "menuItemKategoryTranslations": [
+        {
+          "languageCode": "gr",
+          "title": "Σαλάτες",
+          "subtitle": "Φρέσκες σαλάτες για κάθε γεύση."
+        }
+      ],
+      "menuItems": [
+        {
+          "id": "item9",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Χωριάτικη Σαλάτα",
+              "description": "Ντομάτα, αγγούρι, πιπεριά, φέτα και ελιές.",
+              "allergies": "Περιέχει γαλακτοκομικά.",
+              "price": "6.00"
+            }
+          ]
+        },
+        {
+          "id": "item10",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Σαλάτα Καίσαρα",
+              "description": "Σαλάτα με κοτόπουλο, κρουτόν και παρμεζάνα.",
+              "allergies": "Περιέχει γλουτένη και γαλακτοκομικά.",
+              "price": "7.50"
+            }
+          ]
+        },
+        {
+          "id": "item11",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Σαλάτα Ρόκα",
+              "description": "Ρόκα με παρμεζάνα και μπαλσάμικο.",
+              "allergies": "Περιέχει γαλακτοκομικά.",
+              "price": "5.50"
+            }
+          ]
+        },
+        {
+          "id": "item12",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Σαλάτα Τόνου",
+              "description": "Σαλάτα με τόνο, αυγό και καλαμπόκι.",
+              "allergies": "Περιέχει ψάρι και αυγό.",
+              "price": "7.00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category4",
+      "title": "Επιδόρπια",
+      "menuItemKategoryTranslations": [
+        {
+          "languageCode": "gr",
+          "title": "Επιδόρπια",
+          "subtitle": "Γλυκές επιλογές για το τέλος."
+        }
+      ],
+      "menuItems": [
+        {
+          "id": "item13",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Μπακλαβάς",
+              "description": "Παραδοσιακό γλυκό με φύλλο και καρύδια.",
+              "allergies": "Περιέχει γλουτένη και ξηρούς καρπούς.",
+              "price": "4.00"
+            }
+          ]
+        },
+        {
+          "id": "item14",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Γαλακτομπούρεκο",
+              "description": "Γλυκό με κρέμα και φύλλο σιροπιαστό.",
+              "allergies": "Περιέχει γλουτένη και γαλακτοκομικά.",
+              "price": "4.50"
+            }
+          ]
+        },
+        {
+          "id": "item15",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Καταΐφι",
+              "description": "Γλυκό με φύλλο και καρύδια, σιροπιαστό.",
+              "allergies": "Περιέχει γλουτένη και ξηρούς καρπούς.",
+              "price": "4.50"
+            }
+          ]
+        },
+        {
+          "id": "item16",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Γιαούρτι με Μέλι",
+              "description": "Παραδοσιακό γιαούρτι με ελληνικό μέλι.",
+              "allergies": "Περιέχει γαλακτοκομικά.",
+              "price": "3.50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category5",
+      "title": "Ροφήματα",
+      "menuItemKategoryTranslations": [
+        {
+          "languageCode": "gr",
+          "title": "Ροφήματα",
+          "subtitle": "Ζεστά και κρύα ροφήματα για κάθε γούστο."
+        }
+      ],
+      "menuItems": [
+        {
+          "id": "item17",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Καφές",
+              "description": "Ελληνικός, espresso ή καπουτσίνο.",
+              "allergies": "Δεν περιέχει αλλεργιογόνα.",
+              "price": "2.50"
+            }
+          ]
+        },
+        {
+          "id": "item18",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Τσάι",
+              "description": "Επιλογή από πράσινο, μαύρο ή τσάι βοτάνων.",
+              "allergies": "Δεν περιέχει αλλεργιογόνα.",
+              "price": "2.00"
+            }
+          ]
+        },
+        {
+          "id": "item19",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Φρέσκος Χυμός Πορτοκάλι",
+              "description": "Χυμός από φρέσκα πορτοκάλια.",
+              "allergies": "Δεν περιέχει αλλεργιογόνα.",
+              "price": "3.00"
+            }
+          ]
+        },
+        {
+          "id": "item20",
+          "image": "/images/bruschetta.jpg",
+          "menuItemTranslation": [
+            {
+              "languageCode": "gr",
+              "title": "Smoothie",
+              "description": "Σμούθι με φρούτα εποχής.",
+              "allergies": "Δεν περιέχει αλλεργιογόνα.",
+              "price": "4.00"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
