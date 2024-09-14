@@ -1,17 +1,13 @@
-// utils/iconLoader.ts
+// components/pages/punlishedMenu/iconLoader.tsx
 import React from 'react';
-import { FaBeer, FaCoffee } from 'react-icons/fa'; // Import icons
 
-// Define a mapping from icon names to components
-const iconMap: { [key: string]: React.ComponentType } = {
-  FaBeer: FaBeer,
-  FaCoffee: FaCoffee,
-  // Add more mappings as needed
+interface IconLoaderProps {
+  iconName?: string; // Keep iconName if needed in future updates
+}
+
+const IconLoader: React.FC<IconLoaderProps> = ({ iconName }) => {
+  // Example logic: use iconName if necessary
+  return <div>{iconName && <span>Icon: {iconName}</span>}</div>;
 };
 
-console.log("iconMap = ",iconMap);
-
-// Function to get the icon component based on its name
-export function getIcon(iconName: string): React.ComponentType | null {
-  return iconMap["FaBeer"] || null; // Return the component or null if not found
-}
+export default IconLoader;

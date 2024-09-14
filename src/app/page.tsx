@@ -91,7 +91,6 @@ const Home: React.FC = () => {
             return (
               <div key={category.id}>
                 <CategoryCard
-                  iconName=""
                   title={translation ? translation.title : category.title}
                   subtitle={translation ? translation.subtitle : category.title}
                 />
