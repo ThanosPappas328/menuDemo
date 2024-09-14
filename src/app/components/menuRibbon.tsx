@@ -1,7 +1,7 @@
 // components/MenuRibbon.tsx
 import React from 'react';
 import { FaRedo } from 'react-icons/fa'; // Use any refresh icon, here using Font Awesome
-import styles from './menuRibbon.module.css';
+import styles from '../styles/menuRibbon.module.css';
 
 interface MenuRibbonProps {
   categories: Array<{ id: string; title: string; subtitle: string; image?: string }>;

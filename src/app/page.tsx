@@ -2,11 +2,11 @@
 'use client';
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
-import Title from './headerWithInfo';
-import MenuRibbon from './menuRibbon';
-import CategoryCard from './categoryCard';
-import MenuItemCard from './menuItemCard';
-import BannerAd from './bannerAd';
+import Title from './components/headerWithInfo';
+import MenuRibbon from './components/menuRibbon';
+import CategoryCard from './components/categoryCard';
+import MenuItemCard from './components/menuItemCard';
+import BannerAd from './components/bannerAd';
 import menuDataJson from '../../public/data/menuData.json';
 
 // Define types for categories and menu items
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                     return itemTranslation ? (
                       <MenuItemCard
                         key={item.id}
-                        imageSrc={item.image}
+                        imageSrc={'/menudemo/'+item.image}
                         title={itemTranslation.title}
                         description={itemTranslation.description}
                         allergies={itemTranslation.allergies}

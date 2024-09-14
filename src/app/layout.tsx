@@ -1,11 +1,13 @@
+// app/layout.tsx
 'use client';
-import Banner from './banner';
-import Footer from './footer';
-import styles from  './publicMenuLayout.module.css'; // Optional: Include styles specific to this layout
+import React from 'react';
+import Banner from './components/banner';
+import Footer from './components/footer';
+import styles from './styles/publicMenuLayout.module.css';
 
-export default function PublicLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="el">
       <body className={styles.publicMenuLayout}>
         <header className={styles.header}>
           <Banner />

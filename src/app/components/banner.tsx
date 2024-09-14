@@ -1,7 +1,7 @@
 // components/Banner.tsx
 import React from 'react';
 import Image from 'next/image';
-import styles from './banner.module.css';
+import styles from '../styles/banner.module.css';
 
 const Banner: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Banner: React.FC = () => {
       <p className={styles.bannerSubtitle}>Ζήστε τη γεύση της κομψότητας</p> {/* Greek subtitle */}
       <div className={styles.logoContainer}>
         <Image
-          src="/images/CompanyLogo.webp"
+          src='/menudemo/images/CompanyLogo.webp'
           alt="Company Logo"
           width={100} // Adjust width as needed
           height={100} // Adjust height as needed

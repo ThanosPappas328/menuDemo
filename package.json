@@ -8,8 +8,9 @@
     "export": "next export",
     "start": "next start",
     "deploy": "npm run build && gh-pages -d out",
-    "lint": "next lint"
-  },
+    "lint": "next lint",
+    "clean": "rimraf .next out"
+    },
   "dependencies": {
     "next": "14.2.11",
     "react": "^18",
