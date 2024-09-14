@@ -1,32 +1,52 @@
 // components/Home.tsx
-'use client'
+'use client';
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
-import Banner from './pages/punlishedMenu/banner';
 import Title from './pages/punlishedMenu/headerWithInfo';
 import MenuRibbon from './pages/punlishedMenu/menuRibbon';
 import CategoryCard from './pages/punlishedMenu/categoryCard';
 import MenuItemCard from './pages/punlishedMenu/menuItemCard';
-import Footer from './pages/punlishedMenu/footer';
 import BannerAd from './pages/punlishedMenu/bannerAd';
-import menuDataJson from '../../public/data/menuData.json'; // Ensure the correct path to the JSON file
+import menuDataJson from '../../public/data/menuData.json';
+
+// Define types for categories and menu items
+interface MenuItemTranslation {
+  languageCode: string;
+  title: string;
+  description: string;
+  allergies: string;
+  price: string;
+}
+
+interface MenuItem {
+  id: string;
+  image: string;
+  menuItemTranslation: MenuItemTranslation[];
+}
+
+interface Category {
+  id: string;
+  title: string;
+  menuItemKategoryTranslations: { languageCode: string; title: string; subtitle: string }[];
+  menuItems: MenuItem[];
+}
 
 const Home: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [menuData] = useState(menuDataJson);
-  const contentRef = useRef<HTMLDivElement | null>(null); // Ref to scroll into view
+  const [menuData] = useState<{ categories: Category[] }>(menuDataJson);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const handleSelectCategory = (categoryId: string) => {
     setSelectedCategory(categoryId);
     if (contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Scroll to top smoothly
+      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
   const handleResetCategories = () => {
     setSelectedCategory(null);
     if (contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Scroll to top on reset
+      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -35,7 +55,7 @@ const Home: React.FC = () => {
   }
 
   const categories = menuData.categories || [];
-  const itemsByCategory = categories.reduce((acc: any, category: any) => {
+  const itemsByCategory = categories.reduce<Record<string, MenuItem[]>>((acc, category) => {
     acc[category.id] = category.menuItems || [];
     return acc;
   }, {});
@@ -48,38 +68,37 @@ const Home: React.FC = () => {
       </Head>
       <Title />
       <MenuRibbon
-        categories={categories.map((category: any) => {
+        categories={categories.map((category) => {
           const translation = category.menuItemKategoryTranslations.find(
-            (t: any) => t.languageCode === 'gr' // Adjust the language code as needed
+            (t) => t.languageCode === 'gr' // Adjust the language code as needed
           );
           return {
             id: category.id,
             title: translation ? translation.title : category.title,
-            subtitle: translation ? translation.subtitle : category.subtitle,
-            image: category.image,
+            subtitle: translation ? translation.subtitle : category.title,
           };
         })}
         onSelectCategory={handleSelectCategory}
         onResetCategories={handleResetCategories}
       />
-      <div ref={contentRef} className="container mx-auto px-4"> {/* Ref for scrolling */}
+      <div ref={contentRef} className="container mx-auto px-4">
         {categories
-          .filter((category: any) => selectedCategory === null || category.id === selectedCategory)
-          .map((category: any) => {
+          .filter((category) => selectedCategory === null || category.id === selectedCategory)
+          .map((category) => {
             const translation = category.menuItemKategoryTranslations.find(
-              (t: any) => t.languageCode === 'gr' // Adjust the language code as needed
+              (t) => t.languageCode === 'gr' // Adjust the language code as needed
             );
             return (
               <div key={category.id}>
                 <CategoryCard
                   iconName=""
                   title={translation ? translation.title : category.title}
-                  subtitle={translation ? translation.subtitle : category.subtitle}
+                  subtitle={translation ? translation.subtitle : category.title}
                 />
-                {itemsByCategory[category.id].length > 0 ? (
-                  itemsByCategory[category.id].map((item: any) => {
+                {itemsByCategory[category.id]?.length > 0 ? (
+                  itemsByCategory[category.id].map((item) => {
                     const itemTranslation = item.menuItemTranslation.find(
-                      (t: any) => t.languageCode === 'gr' // Adjust the language code as needed
+                      (t) => t.languageCode === 'gr' // Adjust the language code as needed
                     );
                     return itemTranslation ? (
                       <MenuItemCard
@@ -99,10 +118,7 @@ const Home: React.FC = () => {
             );
           })}
       </div>
-      <BannerAd
-        imageUrl="https://via.placeholder.com/728x90.png?text=Advertisement"
-        altText="Sample Advertisement"
-      />
+      <BannerAd imageUrl="https://via.placeholder.com/728x90.png?text=Advertisement" altText="Sample Advertisement" />
     </div>
   );
 };

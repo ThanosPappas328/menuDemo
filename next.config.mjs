@@ -1,13 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-// next.config.js
-module.exports = {
-    output: 'export',
-    basePath: '/menudemo', // Replace <repository-name> with your GitHub repo name
-    images: {
-      unoptimized: true, // Disables image optimization for GitHub Pages
-    },
-  };
-  
-
-export default nextConfig;
+// next.config.mjs
+export default {
+  output: 'export',
+  basePath: '/menuDemo', // Replace with your GitHub repo name
+  images: {
+    unoptimized: true, // Disables image optimization for GitHub Pages
+  },
+};
