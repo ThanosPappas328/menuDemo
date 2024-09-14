@@ -1,7 +1,7 @@
 'use client';
-import Banner from './pages/punlishedMenu/banner';
-import Footer from './pages/punlishedMenu/footer';
-import styles from  '@/app/styles/publicMenuLayout.module.css'; // Optional: Include styles specific to this layout
+import Banner from './banner';
+import Footer from './footer';
+import styles from  './publicMenuLayout.module.css'; // Optional: Include styles specific to this layout
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   return (

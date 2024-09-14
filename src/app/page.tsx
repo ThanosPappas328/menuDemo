@@ -2,11 +2,11 @@
 'use client';
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
-import Title from './pages/punlishedMenu/headerWithInfo';
-import MenuRibbon from './pages/punlishedMenu/menuRibbon';
-import CategoryCard from './pages/punlishedMenu/categoryCard';
-import MenuItemCard from './pages/punlishedMenu/menuItemCard';
-import BannerAd from './pages/punlishedMenu/bannerAd';
+import Title from './headerWithInfo';
+import MenuRibbon from './menuRibbon';
+import CategoryCard from './categoryCard';
+import MenuItemCard from './menuItemCard';
+import BannerAd from './bannerAd';
 import menuDataJson from '../../public/data/menuData.json';
 
 // Define types for categories and menu items

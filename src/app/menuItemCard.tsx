@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaInfoCircle } from 'react-icons/fa';
-import styles from '@/app/styles/menuItemCard.module.css';
+import styles from './menuItemCard.module.css';
 
 interface MenuItemCardProps {
   imageSrc: string;

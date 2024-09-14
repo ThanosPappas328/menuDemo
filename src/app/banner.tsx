@@ -1,7 +1,7 @@
 // components/Banner.tsx
 import React from 'react';
 import Image from 'next/image';
-import styles from '@/app/styles/banner.module.css';
+import styles from './banner.module.css';
 
 const Banner: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '@/app/styles/headerWithInfo.module.css';
+import styles from './headerWithInfo.module.css';
 
 const HeaderWithInfo: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
