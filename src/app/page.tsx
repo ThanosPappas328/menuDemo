@@ -1,101 +1,112 @@
-import Image from "next/image";
+// components/Home.tsx
+'use client'
+import React, { useState, useRef } from 'react';
+import Head from 'next/head';
+import Banner from './pages/punlishedMenu/banner';
+import Title from './pages/punlishedMenu/headerWithInfo';
+import MenuRibbon from './pages/punlishedMenu/menuRibbon';
+import CategoryCard from './pages/punlishedMenu/categoryCard';
+import MenuItemCard from './pages/punlishedMenu/menuItemCard';
+import Footer from './pages/punlishedMenu/footer';
+import BannerAd from './pages/punlishedMenu/bannerAd';
+import menuDataJson from '../../public/data/menuData.json'; // Ensure the correct path to the JSON file
 
-export default function Home() {
+const Home: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [menuData] = useState(menuDataJson);
+  const contentRef = useRef<HTMLDivElement | null>(null); // Ref to scroll into view
+
+  const handleSelectCategory = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Scroll to top smoothly
+    }
+  };
+
+  const handleResetCategories = () => {
+    setSelectedCategory(null);
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Scroll to top on reset
+    }
+  };
+
+  if (!menuData) {
+    return <div>Loading...</div>;
+  }
+
+  const categories = menuData.categories || [];
+  const itemsByCategory = categories.reduce((acc: any, category: any) => {
+    acc[category.id] = category.menuItems || [];
+    return acc;
+  }, {});
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div>
+      <Head>
+        <title>Restaurant Menu</title>
+        <meta name="description" content="Welcome to our restaurant menu page." />
+      </Head>
+      <Title />
+      <MenuRibbon
+        categories={categories.map((category: any) => {
+          const translation = category.menuItemKategoryTranslations.find(
+            (t: any) => t.languageCode === 'gr' // Adjust the language code as needed
+          );
+          return {
+            id: category.id,
+            title: translation ? translation.title : category.title,
+            subtitle: translation ? translation.subtitle : category.subtitle,
+            image: category.image,
+          };
+        })}
+        onSelectCategory={handleSelectCategory}
+        onResetCategories={handleResetCategories}
+      />
+      <div ref={contentRef} className="container mx-auto px-4"> {/* Ref for scrolling */}
+        {categories
+          .filter((category: any) => selectedCategory === null || category.id === selectedCategory)
+          .map((category: any) => {
+            const translation = category.menuItemKategoryTranslations.find(
+              (t: any) => t.languageCode === 'gr' // Adjust the language code as needed
+            );
+            return (
+              <div key={category.id}>
+                <CategoryCard
+                  iconName=""
+                  title={translation ? translation.title : category.title}
+                  subtitle={translation ? translation.subtitle : category.subtitle}
+                />
+                {itemsByCategory[category.id].length > 0 ? (
+                  itemsByCategory[category.id].map((item: any) => {
+                    const itemTranslation = item.menuItemTranslation.find(
+                      (t: any) => t.languageCode === 'gr' // Adjust the language code as needed
+                    );
+                    return itemTranslation ? (
+                      <MenuItemCard
+                        key={item.id}
+                        imageSrc={item.image}
+                        title={itemTranslation.title}
+                        description={itemTranslation.description}
+                        allergies={itemTranslation.allergies}
+                        price={parseFloat(itemTranslation.price) || 0}
+                      />
+                    ) : null;
+                  })
+                ) : (
+                  <div>No menu items available</div>
+                )}
+              </div>
+            );
+          })}
+      </div>
+      <BannerAd
+        imageUrl="https://via.placeholder.com/728x90.png?text=Advertisement"
+        altText="Sample Advertisement"
+      />
     </div>
   );
+};
+
+export default function App() {
+  return <Home />;
 }

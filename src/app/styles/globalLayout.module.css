@@ -1,0 +1,47 @@
+/* Global styles and resets */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f4f7f4;
+}
+
+
+/* Main layout container for sidebar and main content */
+.layoutContainer {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Main content area with scrolling */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3b7f5f;
+  color: white;
+  top: 0;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+  flex-shrink: 0;
+}

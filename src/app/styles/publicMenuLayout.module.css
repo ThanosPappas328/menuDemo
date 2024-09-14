@@ -1,0 +1,153 @@
+/* publicMenuLayout.css */
+
+/* General Layout Styles */
+.public-layout-body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .public-header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main Content Area */
+  .public-main {
+    flex: 1;
+    padding: 20px; /* Base padding for larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Title Component */
+  .public-main h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* BannerAd Component */
+  .banner-ad {
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Links and Text */
+  .public-footer a {
+    color: #feb47b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .public-footer a:hover {
+    color: #ff7e5f;
+  }
+  
+  .public-footer h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .public-footer p,
+  .public-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .public-footer ul li {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Adjustments for Mobile Devices */
+  @media (max-width: 768px) {
+    .public-header {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .public-main {
+      padding: 15px; /* Adjusted padding for smaller screens */
+      gap: 15px;
+    }
+  
+    .public-main h2 {
+      font-size: 2rem;
+      margin: 15px 0;
+    }
+  
+    .banner {
+      padding: 20px 15px;
+      font-size: 1.1rem;
+    }
+  
+    .banner-ad {
+      margin: 15px 0;
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .public-footer h4 {
+      font-size: 1rem;
+    }
+  
+    .public-footer {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .public-footer ul li {
+      margin: 3px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .public-main {
+      padding: 10px; /* Increased padding on smaller screens */
+      gap: 10px;
+    }
+  
+    .public-main h2 {
+      font-size: 1.75rem;
+    }
+  
+    .banner {
+      padding: 15px 10px;
+      font-size: 1rem;
+    }
+  
+    .banner-ad {
+      margin: 10px 0;
+      padding: 6px;
+    }
+  
+    .public-footer h4 {
+      font-size: 0.9rem;
+    }
+  }
+  

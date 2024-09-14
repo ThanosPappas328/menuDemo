@@ -1,0 +1,31 @@
+/* styles/Banner.module.css */
+
+.banner {
+  background: linear-gradient(to right, #3b82f6, #33ea79);
+  color: white;
+  text-align: center;
+  padding: 40px 0; /* Reduced padding to save vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerTitle {
+  font-size: 1.8rem; /* Reduced font size */
+  font-weight: 700; /* Slightly reduced weight */
+  margin: 0; /* Remove default margin */
+}
+
+.bannerSubtitle {
+  margin-top: 0.5rem; /* Reduced margin */
+  font-size: 1rem; /* Slightly smaller font size */
+}
+
+.logoContainer {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.logo {
+  border-radius: 8px; /* Optional: adds some style to the logo */
+}

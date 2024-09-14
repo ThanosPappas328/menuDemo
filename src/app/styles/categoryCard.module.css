@@ -1,0 +1,40 @@
+.categoryCard {
+  max-width: 100%;
+  margin: 1rem auto;
+  border-bottom: 3px solid rgb(33, 33, 33);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.categoryCard:hover {
+  transform: scale(1.05);
+}
+
+.categoryImage {
+  width: 100%;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.categoryContent {
+  padding: 1rem;
+  background-color: white;
+  display: flex; /* Use flex to align children horizontally */
+  align-items: center; /* Align items vertically centered */
+  gap: 0.5rem; /* Optional: Adjust spacing between icon and title */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.categorySubtitle {
+  color: #4b5563;
+}

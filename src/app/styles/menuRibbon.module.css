@@ -1,0 +1,64 @@
+/* menuRibbon.module.css */
+/* menuRibbon.module.css */
+.menuRibbon {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents items from wrapping onto the next line */
+  padding: 10px 0; /* Adjust padding as needed */
+  gap: 10px; /* Space between menu items */
+  scrollbar-width: thin; /* Adjust scrollbar width in Firefox */
+  scrollbar-color: #888 transparent; /* Customize scrollbar color in Firefox */
+  position: sticky; /* Makes the element sticky */
+  top: 0; /* Specifies the top position where it becomes sticky */
+  z-index: 50; /* Ensure it stays below the modal */
+  background-color: white; /* Background color to prevent overlap issues */
+  align-items: center; /* Aligns items vertically centered */
+}
+
+
+/* Optional styling to improve scrollbar appearance in WebKit browsers (Chrome, Safari) */
+.menuRibbon::-webkit-scrollbar {
+  height: 8px;
+}
+
+.menuRibbon::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.menuRibbon::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.refreshButton {
+  padding: 8px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refreshButton:hover {
+  background-color: #d5d5d5;
+  transform: rotate(90deg); /* Optional: Adds a subtle rotate effect on hover */
+}
+
+.categoryButton {
+  padding: 8px 16px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Ensures button text does not wrap */
+}
+
+.categoryButton:hover {
+  background-color: #005bb5;
+}
