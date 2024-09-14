@@ -187,8 +187,8 @@
 
 .menuItemCard_card__CikZh {
   display: flex;
-  justify-content: space-between; /* Pushes the content and image to opposite sides */
-  align-items: center; /* Vertically centers the image */
+  justify-content: space-between;
+  align-items: center; /* Aligns the content vertically centered */
   padding: 0.75rem;
   border: 1px solid #d1d5db;
   border-radius: 8px;
@@ -232,7 +232,7 @@
 
 .menuItemCard_header__jhAog {
   display: flex;
-  align-items: center; /* Align the title and icon vertically centered */
+  align-items: center; /* Align title and icon vertically centered */
   gap: 0.5rem; /* Space between the title and the icon */
   margin-bottom: 0.25rem; /* Reduced space between header and description */
 }
@@ -241,6 +241,7 @@
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 0.1rem; /* Minimal spacing below the title */
+  font-size: 1rem; /* Adjust if needed */
 }
 
 .menuItemCard_titleLarge__BWDvP {
@@ -254,7 +255,17 @@
 .menuItemCard_icon__0QEz1 {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  font-size: 1.1rem; /* Increase the icon size */
+  padding: 0.5rem; /* Increase padding for better clickability */
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: transform 0.2s ease; /* Optional: Add some interaction effect */
+}
+
+.menuItemCard_icon__0QEz1:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .menuItemCard_description__jyfmx {
