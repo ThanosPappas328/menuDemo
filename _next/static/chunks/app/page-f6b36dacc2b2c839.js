@@ -1,1 +1,807 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[931],{3468:function(e,t,i){Promise.resolve().then(i.bind(i,3595))},7449:function(e,t){"use strict";function i(){return null}Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return i}}),("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},3595:function(e,t,i){"use strict";i.r(t),i.d(t,{default:function(){return y}});var r=i(7437),a=i(2265),n=i(7449),l=i.n(n),s=i(9080),o=i.n(s),c=()=>{let[e,t]=(0,a.useState)(!1);return(0,r.jsxs)("div",{className:o().header,children:[(0,r.jsx)("h2",{className:o().companyName,children:"Codex Caffe"}),(0,r.jsx)("button",{onClick:()=>{t(!0)},className:o().infoButton,children:"Info"}),e&&(0,r.jsx)("div",{className:o().modalOverlay,children:(0,r.jsxs)("div",{className:o().modalContent,children:[(0,r.jsx)("h3",{className:o().modalTitle,children:"Company Information"}),(0,r.jsx)("p",{children:"Here is some additional information about Codex Caffe. Customize this message as needed."}),(0,r.jsx)("button",{onClick:()=>{t(!1)},className:o().closeButton,children:"Close"})]})})]})},m=i(1942),u=i(51),d=i.n(u),g=e=>{let{categories:t,onSelectCategory:i,onResetCategories:a}=e;return(0,r.jsxs)("div",{className:d().menuRibbon,children:[(0,r.jsx)("button",{onClick:a,className:d().refreshButton,title:"Refresh",children:(0,r.jsx)(m.WLu,{})}),t.map(e=>(0,r.jsx)("button",{onClick:()=>i(e.id),className:d().categoryButton,children:e.title},e.id))]})},p=e=>{let{title:t,subtitle:i}=e;return(0,r.jsxs)("div",{className:"category-card",children:[(0,r.jsx)("h2",{children:t}),i&&(0,r.jsx)("p",{children:i})]})},h=i(6648),f=i(8145),_=i.n(f),b=e=>{let{imageSrc:t,title:i,description:n,allergies:l,price:s}=e,[o,c]=(0,a.useState)(!1),[u,d]=(0,a.useState)(!1),[g,p]=(0,a.useState)(!1);return(0,r.jsxs)("div",{className:"".concat(_().card," ").concat(o?_().cardExpanded:""),onClick:()=>{c(!o)},role:"button","aria-expanded":o,children:[(0,r.jsxs)("div",{className:_().content,children:[(0,r.jsxs)("div",{className:_().header,children:[(0,r.jsx)("h3",{className:_().title,children:i}),(0,r.jsxs)("div",{className:_().icon,onMouseEnter:()=>{p(!0)},onMouseLeave:()=>{p(!1)},children:[(0,r.jsx)(m.DAO,{className:"text-gray-500 hover:text-gray-800 cursor-pointer ml-2"}),(0,r.jsx)("div",{className:"".concat(_().tooltip," ").concat(g?"":_().tooltipHidden),children:(0,r.jsx)("p",{children:l})})]})]}),(0,r.jsx)("p",{className:_().description,children:n}),(0,r.jsxs)("p",{className:_().price,children:["$",s.toFixed(2)]})]}),(0,r.jsx)("div",{className:_().imageContainer,children:(0,r.jsx)(h.default,{src:u?"/default-category-image.jpg":t.startsWith("http")||t.startsWith("/")?t:"/images/".concat(t),alt:i||"Menu item image",width:200,height:200,className:_().image,onError:()=>d(!0)})})]})},j=e=>{let{imageUrl:t,altText:i}=e;return(0,r.jsx)("div",{className:"banner-ad",children:(0,r.jsx)(h.default,{src:t,alt:i,width:728,height:90})})},C=JSON.parse('{"categories":[{"id":"category1","title":"Ορεκτικά","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Ορεκτικά","subtitle":"Ξεκινήστε το γεύμα σας με νόστιμα ορεκτικά."}],"menuItems":[{"id":"item1","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Μπρουσκέτα","description":"Ψωμί με φρέσκια ντομάτα, βασιλικό και ελαιόλαδο.","allergies":"Περιέχει γλουτένη.","price":"4.50"}]},{"id":"item2","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σκορδόψωμο","description":"Κριτσανιστό ψωμί με σκόρδο και βούτυρο.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"3.50"}]},{"id":"item3","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Γεμιστά Μανιτάρια","description":"Μανιτάρια γεμιστά με τυρί και μυρωδικά.","allergies":"Περιέχει γαλακτοκομικά.","price":"5.00"}]},{"id":"item4","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Καλαμαράκια Τηγανιτά","description":"Φρέσκα τηγανητά καλαμαράκια με λεμόνι.","allergies":"Περιέχει θαλασσινά και γλουτένη.","price":"7.50"}]}]},{"id":"category2","title":"Κυρίως Πιάτα","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Κυρίως Πιάτα","subtitle":"Απολαύστε μια ποικιλία από κυρίως πιάτα."}],"menuItems":[{"id":"item5","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Μουσακάς","description":"Παραδοσιακός μουσακάς με μελιτζάνες, κιμά και μπεσαμέλ.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"9.00"}]},{"id":"item6","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σουβλάκι","description":"Χοιρινό σουβλάκι σερβιρισμένο με πίτα και τζατζίκι.","allergies":"Περιέχει γλουτένη.","price":"8.00"}]},{"id":"item7","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Στιφάδο","description":"Μοσχαράκι μαγειρεμένο με κρεμμύδια και κόκκινο κρασί.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"10.50"}]},{"id":"item8","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Παστίτσιο","description":"Ζυμαρικά με κιμά και κρέμα μπεσαμέλ.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"8.50"}]}]},{"id":"category3","title":"Σαλάτες","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Σαλάτες","subtitle":"Φρέσκες σαλάτες για κάθε γεύση."}],"menuItems":[{"id":"item9","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Χωριάτικη Σαλάτα","description":"Ντομάτα, αγγούρι, πιπεριά, φέτα και ελιές.","allergies":"Περιέχει γαλακτοκομικά.","price":"6.00"}]},{"id":"item10","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σαλάτα Καίσαρα","description":"Σαλάτα με κοτόπουλο, κρουτόν και παρμεζάνα.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"7.50"}]},{"id":"item11","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σαλάτα Ρόκα","description":"Ρόκα με παρμεζάνα και μπαλσάμικο.","allergies":"Περιέχει γαλακτοκομικά.","price":"5.50"}]},{"id":"item12","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σαλάτα Τόνου","description":"Σαλάτα με τόνο, αυγό και καλαμπόκι.","allergies":"Περιέχει ψάρι και αυγό.","price":"7.00"}]}]},{"id":"category4","title":"Επιδόρπια","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Επιδόρπια","subtitle":"Γλυκές επιλογές για το τέλος."}],"menuItems":[{"id":"item13","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Μπακλαβάς","description":"Παραδοσιακό γλυκό με φύλλο και καρύδια.","allergies":"Περιέχει γλουτένη και ξηρούς καρπούς.","price":"4.00"}]},{"id":"item14","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Γαλακτομπούρεκο","description":"Γλυκό με κρέμα και φύλλο σιροπιαστό.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"4.50"}]},{"id":"item15","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Καταΐφι","description":"Γλυκό με φύλλο και καρύδια, σιροπιαστό.","allergies":"Περιέχει γλουτένη και ξηρούς καρπούς.","price":"4.50"}]},{"id":"item16","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Γιαούρτι με Μέλι","description":"Παραδοσιακό γιαούρτι με ελληνικό μέλι.","allergies":"Περιέχει γαλακτοκομικά.","price":"3.50"}]}]},{"id":"category5","title":"Ροφήματα","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Ροφήματα","subtitle":"Ζεστά και κρύα ροφήματα για κάθε γούστο."}],"menuItems":[{"id":"item17","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Καφές","description":"Ελληνικός, espresso ή καπουτσίνο.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"2.50"}]},{"id":"item18","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Τσάι","description":"Επιλογή από πράσινο, μαύρο ή τσάι βοτάνων.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"2.00"}]},{"id":"item19","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Φρέσκος Χυμός Πορτοκάλι","description":"Χυμός από φρέσκα πορτοκάλια.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"3.00"}]},{"id":"item20","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Smoothie","description":"Σμούθι με φρούτα εποχής.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"4.00"}]}]}]}');let v=()=>{let[e,t]=(0,a.useState)(null),[i]=(0,a.useState)(C),n=(0,a.useRef)(null);if(!i)return(0,r.jsx)("div",{children:"Loading..."});let s=i.categories||[],o=s.reduce((e,t)=>(e[t.id]=t.menuItems||[],e),{});return(0,r.jsxs)("div",{children:[(0,r.jsxs)(l(),{children:[(0,r.jsx)("title",{children:"Restaurant Menu"}),(0,r.jsx)("meta",{name:"description",content:"Welcome to our restaurant menu page."})]}),(0,r.jsx)(c,{}),(0,r.jsx)(g,{categories:s.map(e=>{let t=e.menuItemKategoryTranslations.find(e=>"gr"===e.languageCode);return{id:e.id,title:t?t.title:e.title,subtitle:t?t.subtitle:e.title}}),onSelectCategory:e=>{t(e),n.current&&n.current.scrollIntoView({behavior:"smooth",block:"start"})},onResetCategories:()=>{t(null),n.current&&n.current.scrollIntoView({behavior:"smooth",block:"start"})}}),(0,r.jsx)("div",{ref:n,className:"container mx-auto px-4",children:s.filter(t=>null===e||t.id===e).map(e=>{var t;let i=e.menuItemKategoryTranslations.find(e=>"gr"===e.languageCode);return(0,r.jsxs)("div",{children:[(0,r.jsx)(p,{title:i?i.title:e.title,subtitle:i?i.subtitle:e.title}),(null===(t=o[e.id])||void 0===t?void 0:t.length)>0?o[e.id].map(e=>{let t=e.menuItemTranslation.find(e=>"gr"===e.languageCode);return t?(0,r.jsx)(b,{imageSrc:e.image,title:t.title,description:t.description,allergies:t.allergies,price:parseFloat(t.price)||0},e.id):null}):(0,r.jsx)("div",{children:"No menu items available"})]},e.id)})}),(0,r.jsx)(j,{imageUrl:"https://via.placeholder.com/728x90.png?text=Advertisement",altText:"Sample Advertisement"})]})};function y(){return(0,r.jsx)(v,{})}},9080:function(e){e.exports={header:"headerWithInfo_header__ksunf",companyName:"headerWithInfo_companyName__RXjZ_",infoButton:"headerWithInfo_infoButton__nTdjX",modalOverlay:"headerWithInfo_modalOverlay__d_TPV",modalContent:"headerWithInfo_modalContent__btJ9P",modalTitle:"headerWithInfo_modalTitle__B59LC",closeButton:"headerWithInfo_closeButton__yvH6y"}},8145:function(e){e.exports={card:"menuItemCard_card__wPqnJ",cardExpanded:"menuItemCard_cardExpanded__PtO6k",imageContainer:"menuItemCard_imageContainer__CawFU",image:"menuItemCard_image__rgm7U",content:"menuItemCard_content__BQ8CZ",header:"menuItemCard_header__sdq__",title:"menuItemCard_title__8MdvA",titleLarge:"menuItemCard_titleLarge__D7wVP",titleBase:"menuItemCard_titleBase__Co5F2",icon:"menuItemCard_icon__xVL3P",description:"menuItemCard_description__3fgu9",descriptionLarge:"menuItemCard_descriptionLarge__OkO0y",descriptionBase:"menuItemCard_descriptionBase__OYgTI",price:"menuItemCard_price__f4Y5j",priceLarge:"menuItemCard_priceLarge__iYo1r",priceBase:"menuItemCard_priceBase__aIDhj",tooltip:"menuItemCard_tooltip__CUji_",tooltipHidden:"menuItemCard_tooltipHidden__VRZeE"}},51:function(e){e.exports={menuRibbon:"menuRibbon_menuRibbon__UBN5p",refreshButton:"menuRibbon_refreshButton__pPk1J",categoryButton:"menuRibbon_categoryButton__PJ0x_"}},1810:function(e,t,i){"use strict";i.d(t,{w_:function(){return m}});var r=i(2265),a={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},n=r.createContext&&r.createContext(a),l=["attr","size","title"];function s(){return(s=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var i=arguments[t];for(var r in i)Object.prototype.hasOwnProperty.call(i,r)&&(e[r]=i[r])}return e}).apply(this,arguments)}function o(e,t){var i=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),i.push.apply(i,r)}return i}function c(e){for(var t=1;t<arguments.length;t++){var i=null!=arguments[t]?arguments[t]:{};t%2?o(Object(i),!0).forEach(function(t){var r,a;r=t,a=i[t],(r=function(e){var t=function(e,t){if("object"!=typeof e||!e)return e;var i=e[Symbol.toPrimitive];if(void 0!==i){var r=i.call(e,t||"default");if("object"!=typeof r)return r;throw TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:t+""}(r))in e?Object.defineProperty(e,r,{value:a,enumerable:!0,configurable:!0,writable:!0}):e[r]=a}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(i)):o(Object(i)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(i,t))})}return e}function m(e){return t=>r.createElement(u,s({attr:c({},e.attr)},t),function e(t){return t&&t.map((t,i)=>r.createElement(t.tag,c({key:i},t.attr),e(t.child)))}(e.child))}function u(e){var t=t=>{var i,{attr:a,size:n,title:o}=e,m=function(e,t){if(null==e)return{};var i,r,a=function(e,t){if(null==e)return{};var i={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;i[r]=e[r]}return i}(e,t);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);for(r=0;r<n.length;r++)i=n[r],!(t.indexOf(i)>=0)&&Object.prototype.propertyIsEnumerable.call(e,i)&&(a[i]=e[i])}return a}(e,l),u=n||t.size||"1em";return t.className&&(i=t.className),e.className&&(i=(i?i+" ":"")+e.className),r.createElement("svg",s({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},t.attr,a,m,{className:i,style:c(c({color:e.color||t.color},t.style),e.style),height:u,width:u,xmlns:"http://www.w3.org/2000/svg"}),o&&r.createElement("title",null,o),e.children)};return void 0!==n?r.createElement(n.Consumer,null,e=>t(e)):t(a)}}},function(e){e.O(0,[977,699,648,971,23,744],function(){return e(e.s=3468)}),_N_E=e.O()}]);
+(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[931],{
+
+/***/ 3468:
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3595));
+
+
+/***/ }),
+
+/***/ 7449:
+/***/ (function(module, exports) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return NoopHead;
+    }
+}));
+function NoopHead() {
+    return null;
+}
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=noop-head.js.map
+
+
+/***/ }),
+
+/***/ 3595:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ App; }
+});
+
+// EXTERNAL MODULE: ./node_modules/next/dist/compiled/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(7437);
+// EXTERNAL MODULE: ./node_modules/next/dist/compiled/react/index.js
+var react = __webpack_require__(2265);
+// EXTERNAL MODULE: ./node_modules/next/dist/client/components/noop-head.js
+var noop_head = __webpack_require__(7449);
+var noop_head_default = /*#__PURE__*/__webpack_require__.n(noop_head);
+// EXTERNAL MODULE: ./src/app/headerWithInfo.module.css
+var headerWithInfo_module = __webpack_require__(9080);
+var headerWithInfo_module_default = /*#__PURE__*/__webpack_require__.n(headerWithInfo_module);
+;// CONCATENATED MODULE: ./src/app/headerWithInfo.tsx
+
+
+
+const HeaderWithInfo = ()=>{
+    const [isModalOpen, setIsModalOpen] = (0,react.useState)(false);
+    const companyName = "Codex Caffe"; // Hardcoded company name
+    const companyInfo = "Here is some additional information about Codex Caffe. Customize this message as needed.";
+    const handleOpenModal = ()=>{
+        setIsModalOpen(true);
+    };
+    const handleCloseModal = ()=>{
+        setIsModalOpen(false);
+    };
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+        className: (headerWithInfo_module_default()).header,
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("h2", {
+                className: (headerWithInfo_module_default()).companyName,
+                children: companyName
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("button", {
+                onClick: handleOpenModal,
+                className: (headerWithInfo_module_default()).infoButton,
+                children: "Info"
+            }),
+            isModalOpen && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                className: (headerWithInfo_module_default()).modalOverlay,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: (headerWithInfo_module_default()).modalContent,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("h3", {
+                            className: (headerWithInfo_module_default()).modalTitle,
+                            children: "Company Information"
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                            children: companyInfo
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("button", {
+                            onClick: handleCloseModal,
+                            className: (headerWithInfo_module_default()).closeButton,
+                            children: "Close"
+                        })
+                    ]
+                })
+            })
+        ]
+    });
+};
+/* harmony default export */ var headerWithInfo = (HeaderWithInfo);
+
+// EXTERNAL MODULE: ./node_modules/react-icons/fa/index.mjs
+var fa = __webpack_require__(1942);
+// EXTERNAL MODULE: ./src/app/menuRibbon.module.css
+var menuRibbon_module = __webpack_require__(51);
+var menuRibbon_module_default = /*#__PURE__*/__webpack_require__.n(menuRibbon_module);
+;// CONCATENATED MODULE: ./src/app/menuRibbon.tsx
+// components/MenuRibbon.tsx
+
+
+ // Use any refresh icon, here using Font Awesome
+
+const MenuRibbon = (param)=>{
+    let { categories, onSelectCategory, onResetCategories } = param;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+        className: (menuRibbon_module_default()).menuRibbon,
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("button", {
+                onClick: onResetCategories,
+                className: (menuRibbon_module_default()).refreshButton,
+                title: "Refresh",
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(fa/* FaRedo */.WLu, {})
+            }),
+            categories.map((category)=>/*#__PURE__*/ (0,jsx_runtime.jsx)("button", {
+                    onClick: ()=>onSelectCategory(category.id),
+                    className: (menuRibbon_module_default()).categoryButton,
+                    children: category.title
+                }, category.id))
+        ]
+    });
+};
+/* harmony default export */ var menuRibbon = (MenuRibbon);
+
+;// CONCATENATED MODULE: ./src/app/categoryCard.tsx
+// components/pages/punlishedMenu/categoryCard.tsx
+
+
+const CategoryCard = (param)=>{
+    let { title, subtitle } = param;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+        className: "category-card",
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("h2", {
+                children: title
+            }),
+            subtitle && /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                children: subtitle
+            })
+        ]
+    });
+};
+/* harmony default export */ var categoryCard = (CategoryCard);
+
+// EXTERNAL MODULE: ./node_modules/next/dist/api/image.js
+var api_image = __webpack_require__(6648);
+// EXTERNAL MODULE: ./src/app/menuItemCard.module.css
+var menuItemCard_module = __webpack_require__(8145);
+var menuItemCard_module_default = /*#__PURE__*/__webpack_require__.n(menuItemCard_module);
+;// CONCATENATED MODULE: ./src/app/menuItemCard.tsx
+
+
+
+
+
+const MenuItemCard = (param)=>{
+    let { imageSrc, title, description, allergies, price } = param;
+    const [isExpanded, setIsExpanded] = (0,react.useState)(false);
+    const [hasImageError, setHasImageError] = (0,react.useState)(false);
+    const [isTooltipVisible, setIsTooltipVisible] = (0,react.useState)(false);
+    const handleClick = ()=>{
+        setIsExpanded(!isExpanded);
+    };
+    const handleMouseEnter = ()=>{
+        setIsTooltipVisible(true);
+    };
+    const handleMouseLeave = ()=>{
+        setIsTooltipVisible(false);
+    };
+    const formatImageUrl = (url)=>{
+        const formattedUrl = url.startsWith("http") || url.startsWith("/") ? url : "/images/".concat(url);
+        return formattedUrl;
+    };
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+        className: "".concat((menuItemCard_module_default()).card, " ").concat(isExpanded ? (menuItemCard_module_default()).cardExpanded : ""),
+        onClick: handleClick,
+        role: "button",
+        "aria-expanded": isExpanded,
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                className: (menuItemCard_module_default()).content,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        className: (menuItemCard_module_default()).header,
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("h3", {
+                                className: (menuItemCard_module_default()).title,
+                                children: title
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                className: (menuItemCard_module_default()).icon,
+                                onMouseEnter: handleMouseEnter,
+                                onMouseLeave: handleMouseLeave,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)(fa/* FaInfoCircle */.DAO, {
+                                        className: "text-gray-500 hover:text-gray-800 cursor-pointer ml-2"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        className: "".concat((menuItemCard_module_default()).tooltip, " ").concat(isTooltipVisible ? "" : (menuItemCard_module_default()).tooltipHidden),
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                                            children: allergies
+                                        })
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                        className: (menuItemCard_module_default()).description,
+                        children: description
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("p", {
+                        className: (menuItemCard_module_default()).price,
+                        children: [
+                            "$",
+                            price.toFixed(2)
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                className: (menuItemCard_module_default()).imageContainer,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(api_image["default"], {
+                    src: hasImageError ? "/default-category-image.jpg" : formatImageUrl(imageSrc),
+                    alt: title || "Menu item image",
+                    width: 200,
+                    height: 200,
+                    className: (menuItemCard_module_default()).image,
+                    onError: ()=>setHasImageError(true)
+                })
+            })
+        ]
+    });
+};
+/* harmony default export */ var menuItemCard = (MenuItemCard);
+
+;// CONCATENATED MODULE: ./src/app/bannerAd.tsx
+// components/pages/punlishedMenu/bannerAd.tsx
+
+
+ // Import Image from Next.js
+const BannerAd = (param)=>{
+    let { imageUrl, altText } = param;
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+        className: "banner-ad",
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(api_image["default"], {
+            src: imageUrl,
+            alt: altText,
+            width: 728,
+            height: 90
+        })
+    });
+};
+/* harmony default export */ var bannerAd = (BannerAd);
+
+;// CONCATENATED MODULE: ./public/data/menuData.json
+var menuData_namespaceObject = /*#__PURE__*/JSON.parse('{"categories":[{"id":"category1","title":"Ορεκτικά","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Ορεκτικά","subtitle":"Ξεκινήστε το γεύμα σας με νόστιμα ορεκτικά."}],"menuItems":[{"id":"item1","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Μπρουσκέτα","description":"Ψωμί με φρέσκια ντομάτα, βασιλικό και ελαιόλαδο.","allergies":"Περιέχει γλουτένη.","price":"4.50"}]},{"id":"item2","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σκορδόψωμο","description":"Κριτσανιστό ψωμί με σκόρδο και βούτυρο.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"3.50"}]},{"id":"item3","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Γεμιστά Μανιτάρια","description":"Μανιτάρια γεμιστά με τυρί και μυρωδικά.","allergies":"Περιέχει γαλακτοκομικά.","price":"5.00"}]},{"id":"item4","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Καλαμαράκια Τηγανιτά","description":"Φρέσκα τηγανητά καλαμαράκια με λεμόνι.","allergies":"Περιέχει θαλασσινά και γλουτένη.","price":"7.50"}]}]},{"id":"category2","title":"Κυρίως Πιάτα","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Κυρίως Πιάτα","subtitle":"Απολαύστε μια ποικιλία από κυρίως πιάτα."}],"menuItems":[{"id":"item5","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Μουσακάς","description":"Παραδοσιακός μουσακάς με μελιτζάνες, κιμά και μπεσαμέλ.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"9.00"}]},{"id":"item6","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σουβλάκι","description":"Χοιρινό σουβλάκι σερβιρισμένο με πίτα και τζατζίκι.","allergies":"Περιέχει γλουτένη.","price":"8.00"}]},{"id":"item7","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Στιφάδο","description":"Μοσχαράκι μαγειρεμένο με κρεμμύδια και κόκκινο κρασί.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"10.50"}]},{"id":"item8","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Παστίτσιο","description":"Ζυμαρικά με κιμά και κρέμα μπεσαμέλ.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"8.50"}]}]},{"id":"category3","title":"Σαλάτες","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Σαλάτες","subtitle":"Φρέσκες σαλάτες για κάθε γεύση."}],"menuItems":[{"id":"item9","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Χωριάτικη Σαλάτα","description":"Ντομάτα, αγγούρι, πιπεριά, φέτα και ελιές.","allergies":"Περιέχει γαλακτοκομικά.","price":"6.00"}]},{"id":"item10","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σαλάτα Καίσαρα","description":"Σαλάτα με κοτόπουλο, κρουτόν και παρμεζάνα.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"7.50"}]},{"id":"item11","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σαλάτα Ρόκα","description":"Ρόκα με παρμεζάνα και μπαλσάμικο.","allergies":"Περιέχει γαλακτοκομικά.","price":"5.50"}]},{"id":"item12","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Σαλάτα Τόνου","description":"Σαλάτα με τόνο, αυγό και καλαμπόκι.","allergies":"Περιέχει ψάρι και αυγό.","price":"7.00"}]}]},{"id":"category4","title":"Επιδόρπια","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Επιδόρπια","subtitle":"Γλυκές επιλογές για το τέλος."}],"menuItems":[{"id":"item13","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Μπακλαβάς","description":"Παραδοσιακό γλυκό με φύλλο και καρύδια.","allergies":"Περιέχει γλουτένη και ξηρούς καρπούς.","price":"4.00"}]},{"id":"item14","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Γαλακτομπούρεκο","description":"Γλυκό με κρέμα και φύλλο σιροπιαστό.","allergies":"Περιέχει γλουτένη και γαλακτοκομικά.","price":"4.50"}]},{"id":"item15","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Καταΐφι","description":"Γλυκό με φύλλο και καρύδια, σιροπιαστό.","allergies":"Περιέχει γλουτένη και ξηρούς καρπούς.","price":"4.50"}]},{"id":"item16","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Γιαούρτι με Μέλι","description":"Παραδοσιακό γιαούρτι με ελληνικό μέλι.","allergies":"Περιέχει γαλακτοκομικά.","price":"3.50"}]}]},{"id":"category5","title":"Ροφήματα","menuItemKategoryTranslations":[{"languageCode":"gr","title":"Ροφήματα","subtitle":"Ζεστά και κρύα ροφήματα για κάθε γούστο."}],"menuItems":[{"id":"item17","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Καφές","description":"Ελληνικός, espresso ή καπουτσίνο.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"2.50"}]},{"id":"item18","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Τσάι","description":"Επιλογή από πράσινο, μαύρο ή τσάι βοτάνων.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"2.00"}]},{"id":"item19","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Φρέσκος Χυμός Πορτοκάλι","description":"Χυμός από φρέσκα πορτοκάλια.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"3.00"}]},{"id":"item20","image":"/images/bruschetta.jpg","menuItemTranslation":[{"languageCode":"gr","title":"Smoothie","description":"Σμούθι με φρούτα εποχής.","allergies":"Δεν περιέχει αλλεργιογόνα.","price":"4.00"}]}]}]}');
+;// CONCATENATED MODULE: ./src/app/page.tsx
+// components/Home.tsx
+/* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+
+
+
+
+
+const Home = ()=>{
+    const [selectedCategory, setSelectedCategory] = (0,react.useState)(null);
+    const [menuData] = (0,react.useState)(menuData_namespaceObject);
+    const contentRef = (0,react.useRef)(null);
+    const handleSelectCategory = (categoryId)=>{
+        setSelectedCategory(categoryId);
+        if (contentRef.current) {
+            contentRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    };
+    const handleResetCategories = ()=>{
+        setSelectedCategory(null);
+        if (contentRef.current) {
+            contentRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    };
+    if (!menuData) {
+        return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+            children: "Loading..."
+        });
+    }
+    const categories = menuData.categories || [];
+    const itemsByCategory = categories.reduce((acc, category)=>{
+        acc[category.id] = category.menuItems || [];
+        return acc;
+    }, {});
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)((noop_head_default()), {
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("title", {
+                        children: "Restaurant Menu"
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("meta", {
+                        name: "description",
+                        content: "Welcome to our restaurant menu page."
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(headerWithInfo, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(menuRibbon, {
+                categories: categories.map((category)=>{
+                    const translation = category.menuItemKategoryTranslations.find((t)=>t.languageCode === "gr" // Adjust the language code as needed
+                    );
+                    return {
+                        id: category.id,
+                        title: translation ? translation.title : category.title,
+                        subtitle: translation ? translation.subtitle : category.title
+                    };
+                }),
+                onSelectCategory: handleSelectCategory,
+                onResetCategories: handleResetCategories
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                ref: contentRef,
+                className: "container mx-auto px-4",
+                children: categories.filter((category)=>selectedCategory === null || category.id === selectedCategory).map((category)=>{
+                    var _itemsByCategory_category_id;
+                    const translation = category.menuItemKategoryTranslations.find((t)=>t.languageCode === "gr" // Adjust the language code as needed
+                    );
+                    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(categoryCard, {
+                                title: translation ? translation.title : category.title,
+                                subtitle: translation ? translation.subtitle : category.title
+                            }),
+                            ((_itemsByCategory_category_id = itemsByCategory[category.id]) === null || _itemsByCategory_category_id === void 0 ? void 0 : _itemsByCategory_category_id.length) > 0 ? itemsByCategory[category.id].map((item)=>{
+                                const itemTranslation = item.menuItemTranslation.find((t)=>t.languageCode === "gr" // Adjust the language code as needed
+                                );
+                                return itemTranslation ? /*#__PURE__*/ (0,jsx_runtime.jsx)(menuItemCard, {
+                                    imageSrc: item.image,
+                                    title: itemTranslation.title,
+                                    description: itemTranslation.description,
+                                    allergies: itemTranslation.allergies,
+                                    price: parseFloat(itemTranslation.price) || 0
+                                }, item.id) : null;
+                            }) : /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                children: "No menu items available"
+                            })
+                        ]
+                    }, category.id);
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(bannerAd, {
+                imageUrl: "https://via.placeholder.com/728x90.png?text=Advertisement",
+                altText: "Sample Advertisement"
+            })
+        ]
+    });
+};
+function App() {
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(Home, {});
+}
+
+
+/***/ }),
+
+/***/ 9080:
+/***/ (function(module) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"header":"headerWithInfo_header__ksunf","companyName":"headerWithInfo_companyName__RXjZ_","infoButton":"headerWithInfo_infoButton__nTdjX","modalOverlay":"headerWithInfo_modalOverlay__d_TPV","modalContent":"headerWithInfo_modalContent__btJ9P","modalTitle":"headerWithInfo_modalTitle__B59LC","closeButton":"headerWithInfo_closeButton__yvH6y"};
+
+/***/ }),
+
+/***/ 8145:
+/***/ (function(module) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"card":"menuItemCard_card__wPqnJ","cardExpanded":"menuItemCard_cardExpanded__PtO6k","imageContainer":"menuItemCard_imageContainer__CawFU","image":"menuItemCard_image__rgm7U","content":"menuItemCard_content__BQ8CZ","header":"menuItemCard_header__sdq__","title":"menuItemCard_title__8MdvA","titleLarge":"menuItemCard_titleLarge__D7wVP","titleBase":"menuItemCard_titleBase__Co5F2","icon":"menuItemCard_icon__xVL3P","description":"menuItemCard_description__3fgu9","descriptionLarge":"menuItemCard_descriptionLarge__OkO0y","descriptionBase":"menuItemCard_descriptionBase__OYgTI","price":"menuItemCard_price__f4Y5j","priceLarge":"menuItemCard_priceLarge__iYo1r","priceBase":"menuItemCard_priceBase__aIDhj","tooltip":"menuItemCard_tooltip__CUji_","tooltipHidden":"menuItemCard_tooltipHidden__VRZeE"};
+
+/***/ }),
+
+/***/ 51:
+/***/ (function(module) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"menuRibbon":"menuRibbon_menuRibbon__UBN5p","refreshButton":"menuRibbon_refreshButton__pPk1J","categoryButton":"menuRibbon_categoryButton__PJ0x_"};
+
+/***/ }),
+
+/***/ 1810:
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  w_: function() { return /* reexport */ GenIcon; }
+});
+
+// UNUSED EXPORTS: DefaultContext, IconBase, IconContext, IconsManifest
+
+;// CONCATENATED MODULE: ./node_modules/react-icons/lib/iconsManifest.mjs
+var IconsManifest = [
+    {
+        "id": "ci",
+        "name": "Circum Icons",
+        "projectUrl": "https://circumicons.com/",
+        "license": "MPL-2.0 license",
+        "licenseUrl": "https://github.com/Klarr-Agency/Circum-Icons/blob/main/LICENSE"
+    },
+    {
+        "id": "fa",
+        "name": "Font Awesome 5",
+        "projectUrl": "https://fontawesome.com/",
+        "license": "CC BY 4.0 License",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+        "id": "fa6",
+        "name": "Font Awesome 6",
+        "projectUrl": "https://fontawesome.com/",
+        "license": "CC BY 4.0 License",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+        "id": "io",
+        "name": "Ionicons 4",
+        "projectUrl": "https://ionicons.com/",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
+    },
+    {
+        "id": "io5",
+        "name": "Ionicons 5",
+        "projectUrl": "https://ionicons.com/",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
+    },
+    {
+        "id": "md",
+        "name": "Material Design icons",
+        "projectUrl": "http://google.github.io/material-design-icons/",
+        "license": "Apache License Version 2.0",
+        "licenseUrl": "https://github.com/google/material-design-icons/blob/master/LICENSE"
+    },
+    {
+        "id": "ti",
+        "name": "Typicons",
+        "projectUrl": "http://s-ings.com/typicons/",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+        "id": "go",
+        "name": "Github Octicons icons",
+        "projectUrl": "https://octicons.github.com/",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/primer/octicons/blob/master/LICENSE"
+    },
+    {
+        "id": "fi",
+        "name": "Feather",
+        "projectUrl": "https://feathericons.com/",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/feathericons/feather/blob/master/LICENSE"
+    },
+    {
+        "id": "lu",
+        "name": "Lucide",
+        "projectUrl": "https://lucide.dev/",
+        "license": "ISC",
+        "licenseUrl": "https://github.com/lucide-icons/lucide/blob/main/LICENSE"
+    },
+    {
+        "id": "gi",
+        "name": "Game Icons",
+        "projectUrl": "https://game-icons.net/",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+        "id": "wi",
+        "name": "Weather Icons",
+        "projectUrl": "https://erikflowers.github.io/weather-icons/",
+        "license": "SIL OFL 1.1",
+        "licenseUrl": "http://scripts.sil.org/OFL"
+    },
+    {
+        "id": "di",
+        "name": "Devicons",
+        "projectUrl": "https://vorillaz.github.io/devicons/",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "ai",
+        "name": "Ant Design Icons",
+        "projectUrl": "https://github.com/ant-design/ant-design-icons",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "bs",
+        "name": "Bootstrap Icons",
+        "projectUrl": "https://github.com/twbs/icons",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "ri",
+        "name": "Remix Icon",
+        "projectUrl": "https://github.com/Remix-Design/RemixIcon",
+        "license": "Apache License Version 2.0",
+        "licenseUrl": "http://www.apache.org/licenses/"
+    },
+    {
+        "id": "fc",
+        "name": "Flat Color Icons",
+        "projectUrl": "https://github.com/icons8/flat-color-icons",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "gr",
+        "name": "Grommet-Icons",
+        "projectUrl": "https://github.com/grommet/grommet-icons",
+        "license": "Apache License Version 2.0",
+        "licenseUrl": "http://www.apache.org/licenses/"
+    },
+    {
+        "id": "hi",
+        "name": "Heroicons",
+        "projectUrl": "https://github.com/tailwindlabs/heroicons",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "hi2",
+        "name": "Heroicons 2",
+        "projectUrl": "https://github.com/tailwindlabs/heroicons",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "si",
+        "name": "Simple Icons",
+        "projectUrl": "https://simpleicons.org/",
+        "license": "CC0 1.0 Universal",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+        "id": "sl",
+        "name": "Simple Line Icons",
+        "projectUrl": "https://thesabbir.github.io/simple-line-icons/",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "im",
+        "name": "IcoMoon Free",
+        "projectUrl": "https://github.com/Keyamoon/IcoMoon-Free",
+        "license": "CC BY 4.0 License",
+        "licenseUrl": "https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt"
+    },
+    {
+        "id": "bi",
+        "name": "BoxIcons",
+        "projectUrl": "https://github.com/atisawd/boxicons",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/atisawd/boxicons/blob/master/LICENSE"
+    },
+    {
+        "id": "cg",
+        "name": "css.gg",
+        "projectUrl": "https://github.com/astrit/css.gg",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "vsc",
+        "name": "VS Code Icons",
+        "projectUrl": "https://github.com/microsoft/vscode-codicons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+        "id": "tb",
+        "name": "Tabler Icons",
+        "projectUrl": "https://github.com/tabler/tabler-icons",
+        "license": "MIT",
+        "licenseUrl": "https://opensource.org/licenses/MIT"
+    },
+    {
+        "id": "tfi",
+        "name": "Themify Icons",
+        "projectUrl": "https://github.com/lykmapipo/themify-icons",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/thecreation/standard-icons/blob/master/modules/themify-icons/LICENSE"
+    },
+    {
+        "id": "rx",
+        "name": "Radix Icons",
+        "projectUrl": "https://icons.radix-ui.com",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/radix-ui/icons/blob/master/LICENSE"
+    },
+    {
+        "id": "pi",
+        "name": "Phosphor Icons",
+        "projectUrl": "https://github.com/phosphor-icons/core",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/phosphor-icons/core/blob/main/LICENSE"
+    },
+    {
+        "id": "lia",
+        "name": "Icons8 Line Awesome",
+        "projectUrl": "https://icons8.com/line-awesome",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/icons8/line-awesome/blob/master/LICENSE.md"
+    }
+];
+
+// EXTERNAL MODULE: ./node_modules/next/dist/compiled/react/index.js
+var react = __webpack_require__(2265);
+;// CONCATENATED MODULE: ./node_modules/react-icons/lib/iconContext.mjs
+
+var DefaultContext = {
+    color: undefined,
+    size: undefined,
+    className: undefined,
+    style: undefined,
+    attr: undefined
+};
+var IconContext = react.createContext && /*#__PURE__*/ react.createContext(DefaultContext);
+
+;// CONCATENATED MODULE: ./node_modules/react-icons/lib/iconBase.mjs
+var _excluded = [
+    "attr",
+    "size",
+    "title"
+];
+function _objectWithoutProperties(source, excluded) {
+    if (source == null) return {};
+    var target = _objectWithoutPropertiesLoose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    for(var key in source){
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+            if (excluded.indexOf(key) >= 0) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _extends() {
+    _extends = Object.assign ? Object.assign.bind() : function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source){
+                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                    target[key] = source[key];
+                }
+            }
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function ownKeys(e, r) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var o = Object.getOwnPropertySymbols(e);
+        r && (o = o.filter(function(r) {
+            return Object.getOwnPropertyDescriptor(e, r).enumerable;
+        })), t.push.apply(t, o);
+    }
+    return t;
+}
+function _objectSpread(e) {
+    for(var r = 1; r < arguments.length; r++){
+        var t = null != arguments[r] ? arguments[r] : {};
+        r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+            _defineProperty(e, r, t[r]);
+        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+            Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+        });
+    }
+    return e;
+}
+function _defineProperty(obj, key, value) {
+    key = _toPropertyKey(key);
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _toPropertyKey(t) {
+    var i = _toPrimitive(t, "string");
+    return "symbol" == typeof i ? i : i + "";
+}
+function _toPrimitive(t, r) {
+    if ("object" != typeof t || !t) return t;
+    var e = t[Symbol.toPrimitive];
+    if (void 0 !== e) {
+        var i = e.call(t, r || "default");
+        if ("object" != typeof i) return i;
+        throw new TypeError("@@toPrimitive must return a primitive value.");
+    }
+    return ("string" === r ? String : Number)(t);
+}
+
+
+function Tree2Element(tree) {
+    return tree && tree.map((node, i)=>/*#__PURE__*/ react.createElement(node.tag, _objectSpread({
+            key: i
+        }, node.attr), Tree2Element(node.child)));
+}
+function GenIcon(data) {
+    return (props)=>/*#__PURE__*/ react.createElement(IconBase, _extends({
+            attr: _objectSpread({}, data.attr)
+        }, props), Tree2Element(data.child));
+}
+function IconBase(props) {
+    var elem = (conf)=>{
+        var { attr, size, title } = props, svgProps = _objectWithoutProperties(props, _excluded);
+        var computedSize = size || conf.size || "1em";
+        var className;
+        if (conf.className) className = conf.className;
+        if (props.className) className = (className ? className + " " : "") + props.className;
+        return /*#__PURE__*/ react.createElement("svg", _extends({
+            stroke: "currentColor",
+            fill: "currentColor",
+            strokeWidth: "0"
+        }, conf.attr, attr, svgProps, {
+            className: className,
+            style: _objectSpread(_objectSpread({
+                color: props.color || conf.color
+            }, conf.style), props.style),
+            height: computedSize,
+            width: computedSize,
+            xmlns: "http://www.w3.org/2000/svg"
+        }), title && /*#__PURE__*/ react.createElement("title", null, title), props.children);
+    };
+    return IconContext !== undefined ? /*#__PURE__*/ react.createElement(IconContext.Consumer, null, (conf)=>elem(conf)) : elem(DefaultContext);
+}
+
+;// CONCATENATED MODULE: ./node_modules/react-icons/lib/index.mjs
+
+
+
+
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
+/******/ __webpack_require__.O(0, [977,699,648,971,23,744], function() { return __webpack_exec__(3468); });
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ _N_E = __webpack_exports__;
+/******/ }
+]);

@@ -1,1 +1,1118 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[648],{6648:function(e,t,n){n.d(t,{default:function(){return i.a}});var r=n(5601),i=n.n(r)},8173:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"Image",{enumerable:!0,get:function(){return v}});let r=n(9920),i=n(1452),o=n(7437),l=i._(n(2265)),a=r._(n(4887)),u=r._(n(8321)),s=n(497),d=n(7103),f=n(3938);n(2301);let c=n(291),p=r._(n(1241)),m={deviceSizes:[640,750,828,1080,1200,1920,2048,3840],imageSizes:[16,32,48,64,96,128,256,384],path:"/menudemo/_next/image/",loader:"default",dangerouslyAllowSVG:!1,unoptimized:!0};function g(e,t,n,r,i,o,l){let a=null==e?void 0:e.src;e&&e["data-loaded-src"]!==a&&(e["data-loaded-src"]=a,("decode"in e?e.decode():Promise.resolve()).catch(()=>{}).then(()=>{if(e.parentElement&&e.isConnected){if("empty"!==t&&i(!0),null==n?void 0:n.current){let t=new Event("load");Object.defineProperty(t,"target",{writable:!1,value:e});let r=!1,i=!1;n.current({...t,nativeEvent:t,currentTarget:e,target:e,isDefaultPrevented:()=>r,isPropagationStopped:()=>i,persist:()=>{},preventDefault:()=>{r=!0,t.preventDefault()},stopPropagation:()=>{i=!0,t.stopPropagation()}})}(null==r?void 0:r.current)&&r.current(e)}}))}function h(e){return l.use?{fetchPriority:e}:{fetchpriority:e}}"undefined"==typeof window&&(globalThis.__NEXT_IMAGE_IMPORTED=!0);let y=(0,l.forwardRef)((e,t)=>{let{src:n,srcSet:r,sizes:i,height:a,width:u,decoding:s,className:d,style:f,fetchPriority:c,placeholder:p,loading:m,unoptimized:y,fill:b,onLoadRef:v,onLoadingCompleteRef:_,setBlurComplete:w,setShowAltText:j,sizesInput:S,onLoad:x,onError:C,...P}=e;return(0,o.jsx)("img",{...P,...h(c),loading:m,width:u,height:a,decoding:s,"data-nimg":b?"fill":"1",className:d,style:f,sizes:i,srcSet:r,src:n,ref:(0,l.useCallback)(e=>{t&&("function"==typeof t?t(e):"object"==typeof t&&(t.current=e)),e&&(C&&(e.src=e.src),e.complete&&g(e,p,v,_,w,y,S))},[n,p,v,_,w,C,y,S,t]),onLoad:e=>{g(e.currentTarget,p,v,_,w,y,S)},onError:e=>{j(!0),"empty"!==p&&w(!0),C&&C(e)}})});function b(e){let{isAppRouter:t,imgAttributes:n}=e,r={as:"image",imageSrcSet:n.srcSet,imageSizes:n.sizes,crossOrigin:n.crossOrigin,referrerPolicy:n.referrerPolicy,...h(n.fetchPriority)};return t&&a.default.preload?(a.default.preload(n.src,r),null):(0,o.jsx)(u.default,{children:(0,o.jsx)("link",{rel:"preload",href:n.srcSet?void 0:n.src,...r},"__nimg-"+n.src+n.srcSet+n.sizes)})}let v=(0,l.forwardRef)((e,t)=>{let n=(0,l.useContext)(c.RouterContext),r=(0,l.useContext)(f.ImageConfigContext),i=(0,l.useMemo)(()=>{let e=m||r||d.imageConfigDefault,t=[...e.deviceSizes,...e.imageSizes].sort((e,t)=>e-t),n=e.deviceSizes.sort((e,t)=>e-t);return{...e,allSizes:t,deviceSizes:n}},[r]),{onLoad:a,onLoadingComplete:u}=e,g=(0,l.useRef)(a);(0,l.useEffect)(()=>{g.current=a},[a]);let h=(0,l.useRef)(u);(0,l.useEffect)(()=>{h.current=u},[u]);let[v,_]=(0,l.useState)(!1),[w,j]=(0,l.useState)(!1),{props:S,meta:x}=(0,s.getImgProps)(e,{defaultLoader:p.default,imgConf:i,blurComplete:v,showAltText:w});return(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(y,{...S,unoptimized:x.unoptimized,placeholder:x.placeholder,fill:x.fill,onLoadRef:g,onLoadingCompleteRef:h,setBlurComplete:_,setShowAltText:j,sizesInput:e.sizes,ref:t}),x.priority?(0,o.jsx)(b,{isAppRouter:!n,imgAttributes:S}):null]})});("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},2901:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"AmpStateContext",{enumerable:!0,get:function(){return r}});let r=n(9920)._(n(2265)).default.createContext({})},687:function(e,t){function n(e){let{ampFirst:t=!1,hybrid:n=!1,hasQuery:r=!1}=void 0===e?{}:e;return t||n&&r}Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"isInAmpMode",{enumerable:!0,get:function(){return n}})},497:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"getImgProps",{enumerable:!0,get:function(){return a}}),n(2301);let r=n(1564),i=n(7103);function o(e){return void 0!==e.default}function l(e){return void 0===e?e:"number"==typeof e?Number.isFinite(e)?e:NaN:"string"==typeof e&&/^[0-9]+$/.test(e)?parseInt(e,10):NaN}function a(e,t){var n;let a,u,s,{src:d,sizes:f,unoptimized:c=!1,priority:p=!1,loading:m,className:g,quality:h,width:y,height:b,fill:v=!1,style:_,overrideSrc:w,onLoad:j,onLoadingComplete:S,placeholder:x="empty",blurDataURL:C,fetchPriority:P,layout:O,objectFit:z,objectPosition:E,lazyBoundary:M,lazyRoot:I,...k}=e,{imgConf:A,showAltText:R,blurComplete:D,defaultLoader:L}=t,N=A||i.imageConfigDefault;if("allSizes"in N)a=N;else{let e=[...N.deviceSizes,...N.imageSizes].sort((e,t)=>e-t),t=N.deviceSizes.sort((e,t)=>e-t);a={...N,allSizes:e,deviceSizes:t}}if(void 0===L)throw Error("images.loaderFile detected but the file is missing default export.\nRead more: https://nextjs.org/docs/messages/invalid-images-config");let U=k.loader||L;delete k.loader,delete k.srcSet;let T="__next_img_default"in U;if(T){if("custom"===a.loader)throw Error('Image with src "'+d+'" is missing "loader" prop.\nRead more: https://nextjs.org/docs/messages/next-image-missing-loader')}else{let e=U;U=t=>{let{config:n,...r}=t;return e(r)}}if(O){"fill"===O&&(v=!0);let e={intrinsic:{maxWidth:"100%",height:"auto"},responsive:{width:"100%",height:"auto"}}[O];e&&(_={..._,...e});let t={responsive:"100vw",fill:"100vw"}[O];t&&!f&&(f=t)}let F="",G=l(y),B=l(b);if("object"==typeof(n=d)&&(o(n)||void 0!==n.src)){let e=o(d)?d.default:d;if(!e.src)throw Error("An object should only be passed to the image component src parameter if it comes from a static image import. It must include src. Received "+JSON.stringify(e));if(!e.height||!e.width)throw Error("An object should only be passed to the image component src parameter if it comes from a static image import. It must include height and width. Received "+JSON.stringify(e));if(u=e.blurWidth,s=e.blurHeight,C=C||e.blurDataURL,F=e.src,!v){if(G||B){if(G&&!B){let t=G/e.width;B=Math.round(e.height*t)}else if(!G&&B){let t=B/e.height;G=Math.round(e.width*t)}}else G=e.width,B=e.height}}let W=!p&&("lazy"===m||void 0===m);(!(d="string"==typeof d?d:F)||d.startsWith("data:")||d.startsWith("blob:"))&&(c=!0,W=!1),a.unoptimized&&(c=!0),T&&d.endsWith(".svg")&&!a.dangerouslyAllowSVG&&(c=!0),p&&(P="high");let V=l(h),H=Object.assign(v?{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:z,objectPosition:E}:{},R?{}:{color:"transparent"},_),q=D||"empty"===x?null:"blur"===x?'url("data:image/svg+xml;charset=utf-8,'+(0,r.getImageBlurSvg)({widthInt:G,heightInt:B,blurWidth:u,blurHeight:s,blurDataURL:C||"",objectFit:H.objectFit})+'")':'url("'+x+'")',$=q?{backgroundSize:H.objectFit||"cover",backgroundPosition:H.objectPosition||"50% 50%",backgroundRepeat:"no-repeat",backgroundImage:q}:{},J=function(e){let{config:t,src:n,unoptimized:r,width:i,quality:o,sizes:l,loader:a}=e;if(r)return{src:n,srcSet:void 0,sizes:void 0};let{widths:u,kind:s}=function(e,t,n){let{deviceSizes:r,allSizes:i}=e;if(n){let e=/(^|\s)(1?\d?\d)vw/g,t=[];for(let r;r=e.exec(n);r)t.push(parseInt(r[2]));if(t.length){let e=.01*Math.min(...t);return{widths:i.filter(t=>t>=r[0]*e),kind:"w"}}return{widths:i,kind:"w"}}return"number"!=typeof t?{widths:r,kind:"w"}:{widths:[...new Set([t,2*t].map(e=>i.find(t=>t>=e)||i[i.length-1]))],kind:"x"}}(t,i,l),d=u.length-1;return{sizes:l||"w"!==s?l:"100vw",srcSet:u.map((e,r)=>a({config:t,src:n,quality:o,width:e})+" "+("w"===s?e:r+1)+s).join(", "),src:a({config:t,src:n,quality:o,width:u[d]})}}({config:a,src:d,unoptimized:c,width:G,quality:V,sizes:f,loader:U});return{props:{...k,loading:W?"lazy":m,fetchPriority:P,width:G,height:B,decoding:"async",className:g,style:{...H,...$},sizes:J.sizes,srcSet:J.srcSet,src:w||J.src},meta:{unoptimized:c,priority:p,placeholder:x,fill:v}}}},8321:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{default:function(){return g},defaultHead:function(){return f}});let r=n(9920),i=n(1452),o=n(7437),l=i._(n(2265)),a=r._(n(5960)),u=n(2901),s=n(6590),d=n(687);function f(e){void 0===e&&(e=!1);let t=[(0,o.jsx)("meta",{charSet:"utf-8"})];return e||t.push((0,o.jsx)("meta",{name:"viewport",content:"width=device-width"})),t}function c(e,t){return"string"==typeof t||"number"==typeof t?e:t.type===l.default.Fragment?e.concat(l.default.Children.toArray(t.props.children).reduce((e,t)=>"string"==typeof t||"number"==typeof t?e:e.concat(t),[])):e.concat(t)}n(2301);let p=["name","httpEquiv","charSet","itemProp"];function m(e,t){let{inAmpMode:n}=t;return e.reduce(c,[]).reverse().concat(f(n).reverse()).filter(function(){let e=new Set,t=new Set,n=new Set,r={};return i=>{let o=!0,l=!1;if(i.key&&"number"!=typeof i.key&&i.key.indexOf("$")>0){l=!0;let t=i.key.slice(i.key.indexOf("$")+1);e.has(t)?o=!1:e.add(t)}switch(i.type){case"title":case"base":t.has(i.type)?o=!1:t.add(i.type);break;case"meta":for(let e=0,t=p.length;e<t;e++){let t=p[e];if(i.props.hasOwnProperty(t)){if("charSet"===t)n.has(t)?o=!1:n.add(t);else{let e=i.props[t],n=r[t]||new Set;("name"!==t||!l)&&n.has(e)?o=!1:(n.add(e),r[t]=n)}}}}return o}}()).reverse().map((e,t)=>{let r=e.key||t;if(!n&&"link"===e.type&&e.props.href&&["https://fonts.googleapis.com/css","https://use.typekit.net/"].some(t=>e.props.href.startsWith(t))){let t={...e.props||{}};return t["data-href"]=t.href,t.href=void 0,t["data-optimized-fonts"]=!0,l.default.cloneElement(e,t)}return l.default.cloneElement(e,{key:r})})}let g=function(e){let{children:t}=e,n=(0,l.useContext)(u.AmpStateContext),r=(0,l.useContext)(s.HeadManagerContext);return(0,o.jsx)(a.default,{reduceComponentsToState:m,headManager:r,inAmpMode:(0,d.isInAmpMode)(n),children:t})};("function"==typeof t.default||"object"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.defineProperty(t.default,"__esModule",{value:!0}),Object.assign(t.default,t),e.exports=t.default)},1564:function(e,t){function n(e){let{widthInt:t,heightInt:n,blurWidth:r,blurHeight:i,blurDataURL:o,objectFit:l}=e,a=r?40*r:t,u=i?40*i:n,s=a&&u?"viewBox='0 0 "+a+" "+u+"'":"";return"%3Csvg xmlns='http://www.w3.org/2000/svg' "+s+"%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='"+(s?"none":"contain"===l?"xMidYMid":"cover"===l?"xMidYMid slice":"none")+"' style='filter: url(%23b);' href='"+o+"'/%3E%3C/svg%3E"}Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"getImageBlurSvg",{enumerable:!0,get:function(){return n}})},3938:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"ImageConfigContext",{enumerable:!0,get:function(){return o}});let r=n(9920)._(n(2265)),i=n(7103),o=r.default.createContext(i.imageConfigDefault)},7103:function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{VALID_LOADERS:function(){return n},imageConfigDefault:function(){return r}});let n=["default","imgix","cloudinary","akamai","custom"],r={deviceSizes:[640,750,828,1080,1200,1920,2048,3840],imageSizes:[16,32,48,64,96,128,256,384],path:"/_next/image",loader:"default",loaderFile:"",domains:[],disableStaticImages:!1,minimumCacheTTL:60,formats:["image/webp"],dangerouslyAllowSVG:!1,contentSecurityPolicy:"script-src 'none'; frame-src 'none'; sandbox;",contentDispositionType:"inline",remotePatterns:[],unoptimized:!1}},5601:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),function(e,t){for(var n in t)Object.defineProperty(e,n,{enumerable:!0,get:t[n]})}(t,{default:function(){return u},getImageProps:function(){return a}});let r=n(9920),i=n(497),o=n(8173),l=r._(n(1241));function a(e){let{props:t}=(0,i.getImgProps)(e,{defaultLoader:l.default,imgConf:{deviceSizes:[640,750,828,1080,1200,1920,2048,3840],imageSizes:[16,32,48,64,96,128,256,384],path:"/menudemo/_next/image/",loader:"default",dangerouslyAllowSVG:!1,unoptimized:!0}});for(let[e,n]of Object.entries(t))void 0===n&&delete t[e];return{props:t}}let u=o.Image},1241:function(e,t){function n(e){let{config:t,src:n,width:r,quality:i}=e;return t.path+"?url="+encodeURIComponent(n)+"&w="+r+"&q="+(i||75)}Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return r}}),n.__next_img_default=!0;let r=n},291:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"RouterContext",{enumerable:!0,get:function(){return r}});let r=n(9920)._(n(2265)).default.createContext(null)},5960:function(e,t,n){Object.defineProperty(t,"__esModule",{value:!0}),Object.defineProperty(t,"default",{enumerable:!0,get:function(){return a}});let r=n(2265),i="undefined"==typeof window,o=i?()=>{}:r.useLayoutEffect,l=i?()=>{}:r.useEffect;function a(e){let{headManager:t,reduceComponentsToState:n}=e;function a(){if(t&&t.mountedInstances){let i=r.Children.toArray(Array.from(t.mountedInstances).filter(Boolean));t.updateHead(n(i,e))}}if(i){var u;null==t||null==(u=t.mountedInstances)||u.add(e.children),a()}return o(()=>{var n;return null==t||null==(n=t.mountedInstances)||n.add(e.children),()=>{var n;null==t||null==(n=t.mountedInstances)||n.delete(e.children)}}),o(()=>(t&&(t._pendingUpdate=a),()=>{t&&(t._pendingUpdate=a)})),l(()=>(t&&t._pendingUpdate&&(t._pendingUpdate(),t._pendingUpdate=null),()=>{t&&t._pendingUpdate&&(t._pendingUpdate(),t._pendingUpdate=null)})),null}}}]);
+"use strict";
+(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[648],{
+
+/***/ 6648:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* reexport default from dynamic */ _shared_lib_image_external__WEBPACK_IMPORTED_MODULE_0___default.a; }
+/* harmony export */ });
+/* harmony import */ var _shared_lib_image_external__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5601);
+/* harmony import */ var _shared_lib_image_external__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_shared_lib_image_external__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+//# sourceMappingURL=image.js.map
+
+/***/ }),
+
+/***/ 8173:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* __next_internal_client_entry_do_not_use__  cjs */ 
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "Image", ({
+    enumerable: true,
+    get: function() {
+        return Image;
+    }
+}));
+const _interop_require_default = __webpack_require__(9920);
+const _interop_require_wildcard = __webpack_require__(1452);
+const _jsxruntime = __webpack_require__(7437);
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(2265));
+const _reactdom = /*#__PURE__*/ _interop_require_default._(__webpack_require__(4887));
+const _head = /*#__PURE__*/ _interop_require_default._(__webpack_require__(8321));
+const _getimgprops = __webpack_require__(497);
+const _imageconfig = __webpack_require__(7103);
+const _imageconfigcontextsharedruntime = __webpack_require__(3938);
+const _warnonce = __webpack_require__(2301);
+const _routercontextsharedruntime = __webpack_require__(291);
+const _imageloader = /*#__PURE__*/ _interop_require_default._(__webpack_require__(1241));
+// This is replaced by webpack define plugin
+const configEnv = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/menudemo/_next/image/","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true};
+if (typeof window === "undefined") {
+    globalThis.__NEXT_IMAGE_IMPORTED = true;
+}
+// See https://stackoverflow.com/q/39777833/266535 for why we use this ref
+// handler instead of the img's onLoad attribute.
+function handleLoading(img, placeholder, onLoadRef, onLoadingCompleteRef, setBlurComplete, unoptimized, sizesInput) {
+    const src = img == null ? void 0 : img.src;
+    if (!img || img["data-loaded-src"] === src) {
+        return;
+    }
+    img["data-loaded-src"] = src;
+    const p = "decode" in img ? img.decode() : Promise.resolve();
+    p.catch(()=>{}).then(()=>{
+        if (!img.parentElement || !img.isConnected) {
+            // Exit early in case of race condition:
+            // - onload() is called
+            // - decode() is called but incomplete
+            // - unmount is called
+            // - decode() completes
+            return;
+        }
+        if (placeholder !== "empty") {
+            setBlurComplete(true);
+        }
+        if (onLoadRef == null ? void 0 : onLoadRef.current) {
+            // Since we don't have the SyntheticEvent here,
+            // we must create one with the same shape.
+            // See https://reactjs.org/docs/events.html
+            const event = new Event("load");
+            Object.defineProperty(event, "target", {
+                writable: false,
+                value: img
+            });
+            let prevented = false;
+            let stopped = false;
+            onLoadRef.current({
+                ...event,
+                nativeEvent: event,
+                currentTarget: img,
+                target: img,
+                isDefaultPrevented: ()=>prevented,
+                isPropagationStopped: ()=>stopped,
+                persist: ()=>{},
+                preventDefault: ()=>{
+                    prevented = true;
+                    event.preventDefault();
+                },
+                stopPropagation: ()=>{
+                    stopped = true;
+                    event.stopPropagation();
+                }
+            });
+        }
+        if (onLoadingCompleteRef == null ? void 0 : onLoadingCompleteRef.current) {
+            onLoadingCompleteRef.current(img);
+        }
+        if (false) {}
+    });
+}
+function getDynamicProps(fetchPriority) {
+    if (Boolean(_react.use)) {
+        // In React 19.0.0 or newer, we must use camelCase
+        // prop to avoid "Warning: Invalid DOM property".
+        // See https://github.com/facebook/react/pull/25927
+        return {
+            fetchPriority
+        };
+    }
+    // In React 18.2.0 or older, we must use lowercase prop
+    // to avoid "Warning: Invalid DOM property".
+    return {
+        fetchpriority: fetchPriority
+    };
+}
+const ImageElement = /*#__PURE__*/ (0, _react.forwardRef)((param, forwardedRef)=>{
+    let { src, srcSet, sizes, height, width, decoding, className, style, fetchPriority, placeholder, loading, unoptimized, fill, onLoadRef, onLoadingCompleteRef, setBlurComplete, setShowAltText, sizesInput, onLoad, onError, ...rest } = param;
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("img", {
+        ...rest,
+        ...getDynamicProps(fetchPriority),
+        // It's intended to keep `loading` before `src` because React updates
+        // props in order which causes Safari/Firefox to not lazy load properly.
+        // See https://github.com/facebook/react/issues/25883
+        loading: loading,
+        width: width,
+        height: height,
+        decoding: decoding,
+        "data-nimg": fill ? "fill" : "1",
+        className: className,
+        style: style,
+        // It's intended to keep `src` the last attribute because React updates
+        // attributes in order. If we keep `src` the first one, Safari will
+        // immediately start to fetch `src`, before `sizes` and `srcSet` are even
+        // updated by React. That causes multiple unnecessary requests if `srcSet`
+        // and `sizes` are defined.
+        // This bug cannot be reproduced in Chrome or Firefox.
+        sizes: sizes,
+        srcSet: srcSet,
+        src: src,
+        ref: (0, _react.useCallback)((img)=>{
+            if (forwardedRef) {
+                if (typeof forwardedRef === "function") forwardedRef(img);
+                else if (typeof forwardedRef === "object") {
+                    // @ts-ignore - .current is read only it's usually assigned by react internally
+                    forwardedRef.current = img;
+                }
+            }
+            if (!img) {
+                return;
+            }
+            if (onError) {
+                // If the image has an error before react hydrates, then the error is lost.
+                // The workaround is to wait until the image is mounted which is after hydration,
+                // then we set the src again to trigger the error handler (if there was an error).
+                // eslint-disable-next-line no-self-assign
+                img.src = img.src;
+            }
+            if (false) {}
+            if (img.complete) {
+                handleLoading(img, placeholder, onLoadRef, onLoadingCompleteRef, setBlurComplete, unoptimized, sizesInput);
+            }
+        }, [
+            src,
+            placeholder,
+            onLoadRef,
+            onLoadingCompleteRef,
+            setBlurComplete,
+            onError,
+            unoptimized,
+            sizesInput,
+            forwardedRef
+        ]),
+        onLoad: (event)=>{
+            const img = event.currentTarget;
+            handleLoading(img, placeholder, onLoadRef, onLoadingCompleteRef, setBlurComplete, unoptimized, sizesInput);
+        },
+        onError: (event)=>{
+            // if the real image fails to load, this will ensure "alt" is visible
+            setShowAltText(true);
+            if (placeholder !== "empty") {
+                // If the real image fails to load, this will still remove the placeholder.
+                setBlurComplete(true);
+            }
+            if (onError) {
+                onError(event);
+            }
+        }
+    });
+});
+function ImagePreload(param) {
+    let { isAppRouter, imgAttributes } = param;
+    const opts = {
+        as: "image",
+        imageSrcSet: imgAttributes.srcSet,
+        imageSizes: imgAttributes.sizes,
+        crossOrigin: imgAttributes.crossOrigin,
+        referrerPolicy: imgAttributes.referrerPolicy,
+        ...getDynamicProps(imgAttributes.fetchPriority)
+    };
+    if (isAppRouter && _reactdom.default.preload) {
+        // See https://github.com/facebook/react/pull/26940
+        _reactdom.default.preload(imgAttributes.src, opts);
+        return null;
+    }
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_head.default, {
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("link", {
+            rel: "preload",
+            // Note how we omit the `href` attribute, as it would only be relevant
+            // for browsers that do not support `imagesrcset`, and in those cases
+            // it would cause the incorrect image to be preloaded.
+            //
+            // https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
+            href: imgAttributes.srcSet ? undefined : imgAttributes.src,
+            ...opts
+        }, "__nimg-" + imgAttributes.src + imgAttributes.srcSet + imgAttributes.sizes)
+    });
+}
+const Image = /*#__PURE__*/ (0, _react.forwardRef)((props, forwardedRef)=>{
+    const pagesRouter = (0, _react.useContext)(_routercontextsharedruntime.RouterContext);
+    // We're in the app directory if there is no pages router.
+    const isAppRouter = !pagesRouter;
+    const configContext = (0, _react.useContext)(_imageconfigcontextsharedruntime.ImageConfigContext);
+    const config = (0, _react.useMemo)(()=>{
+        const c = configEnv || configContext || _imageconfig.imageConfigDefault;
+        const allSizes = [
+            ...c.deviceSizes,
+            ...c.imageSizes
+        ].sort((a, b)=>a - b);
+        const deviceSizes = c.deviceSizes.sort((a, b)=>a - b);
+        return {
+            ...c,
+            allSizes,
+            deviceSizes
+        };
+    }, [
+        configContext
+    ]);
+    const { onLoad, onLoadingComplete } = props;
+    const onLoadRef = (0, _react.useRef)(onLoad);
+    (0, _react.useEffect)(()=>{
+        onLoadRef.current = onLoad;
+    }, [
+        onLoad
+    ]);
+    const onLoadingCompleteRef = (0, _react.useRef)(onLoadingComplete);
+    (0, _react.useEffect)(()=>{
+        onLoadingCompleteRef.current = onLoadingComplete;
+    }, [
+        onLoadingComplete
+    ]);
+    const [blurComplete, setBlurComplete] = (0, _react.useState)(false);
+    const [showAltText, setShowAltText] = (0, _react.useState)(false);
+    const { props: imgAttributes, meta: imgMeta } = (0, _getimgprops.getImgProps)(props, {
+        defaultLoader: _imageloader.default,
+        imgConf: config,
+        blurComplete,
+        showAltText
+    });
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(ImageElement, {
+                ...imgAttributes,
+                unoptimized: imgMeta.unoptimized,
+                placeholder: imgMeta.placeholder,
+                fill: imgMeta.fill,
+                onLoadRef: onLoadRef,
+                onLoadingCompleteRef: onLoadingCompleteRef,
+                setBlurComplete: setBlurComplete,
+                setShowAltText: setShowAltText,
+                sizesInput: props.sizes,
+                ref: forwardedRef
+            }),
+            imgMeta.priority ? /*#__PURE__*/ (0, _jsxruntime.jsx)(ImagePreload, {
+                isAppRouter: isAppRouter,
+                imgAttributes: imgAttributes
+            }) : null
+        ]
+    });
+});
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=image-component.js.map
+
+
+/***/ }),
+
+/***/ 2901:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "AmpStateContext", ({
+    enumerable: true,
+    get: function() {
+        return AmpStateContext;
+    }
+}));
+const _interop_require_default = __webpack_require__(9920);
+const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(2265));
+const AmpStateContext = _react.default.createContext({});
+if (false) {} //# sourceMappingURL=amp-context.shared-runtime.js.map
+
+
+/***/ }),
+
+/***/ 687:
+/***/ (function(__unused_webpack_module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "isInAmpMode", ({
+    enumerable: true,
+    get: function() {
+        return isInAmpMode;
+    }
+}));
+function isInAmpMode(param) {
+    let { ampFirst = false, hybrid = false, hasQuery = false } = param === void 0 ? {} : param;
+    return ampFirst || hybrid && hasQuery;
+} //# sourceMappingURL=amp-mode.js.map
+
+
+/***/ }),
+
+/***/ 497:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "getImgProps", ({
+    enumerable: true,
+    get: function() {
+        return getImgProps;
+    }
+}));
+const _warnonce = __webpack_require__(2301);
+const _imageblursvg = __webpack_require__(1564);
+const _imageconfig = __webpack_require__(7103);
+const VALID_LOADING_VALUES = (/* unused pure expression or super */ null && ([
+    "lazy",
+    "eager",
+    undefined
+]));
+function isStaticRequire(src) {
+    return src.default !== undefined;
+}
+function isStaticImageData(src) {
+    return src.src !== undefined;
+}
+function isStaticImport(src) {
+    return typeof src === "object" && (isStaticRequire(src) || isStaticImageData(src));
+}
+const allImgs = new Map();
+let perfObserver;
+function getInt(x) {
+    if (typeof x === "undefined") {
+        return x;
+    }
+    if (typeof x === "number") {
+        return Number.isFinite(x) ? x : NaN;
+    }
+    if (typeof x === "string" && /^[0-9]+$/.test(x)) {
+        return parseInt(x, 10);
+    }
+    return NaN;
+}
+function getWidths(param, width, sizes) {
+    let { deviceSizes, allSizes } = param;
+    if (sizes) {
+        // Find all the "vw" percent sizes used in the sizes prop
+        const viewportWidthRe = /(^|\s)(1?\d?\d)vw/g;
+        const percentSizes = [];
+        for(let match; match = viewportWidthRe.exec(sizes); match){
+            percentSizes.push(parseInt(match[2]));
+        }
+        if (percentSizes.length) {
+            const smallestRatio = Math.min(...percentSizes) * 0.01;
+            return {
+                widths: allSizes.filter((s)=>s >= deviceSizes[0] * smallestRatio),
+                kind: "w"
+            };
+        }
+        return {
+            widths: allSizes,
+            kind: "w"
+        };
+    }
+    if (typeof width !== "number") {
+        return {
+            widths: deviceSizes,
+            kind: "w"
+        };
+    }
+    const widths = [
+        ...new Set(// > are actually 3x in the green color, but only 1.5x in the red and
+        // > blue colors. Showing a 3x resolution image in the app vs a 2x
+        // > resolution image will be visually the same, though the 3x image
+        // > takes significantly more data. Even true 3x resolution screens are
+        // > wasteful as the human eye cannot see that level of detail without
+        // > something like a magnifying glass.
+        // https://blog.twitter.com/engineering/en_us/topics/infrastructure/2019/capping-image-fidelity-on-ultra-high-resolution-devices.html
+        [
+            width,
+            width * 2 /*, width * 3*/ 
+        ].map((w)=>allSizes.find((p)=>p >= w) || allSizes[allSizes.length - 1]))
+    ];
+    return {
+        widths,
+        kind: "x"
+    };
+}
+function generateImgAttrs(param) {
+    let { config, src, unoptimized, width, quality, sizes, loader } = param;
+    if (unoptimized) {
+        return {
+            src,
+            srcSet: undefined,
+            sizes: undefined
+        };
+    }
+    const { widths, kind } = getWidths(config, width, sizes);
+    const last = widths.length - 1;
+    return {
+        sizes: !sizes && kind === "w" ? "100vw" : sizes,
+        srcSet: widths.map((w, i)=>loader({
+                config,
+                src,
+                quality,
+                width: w
+            }) + " " + (kind === "w" ? w : i + 1) + kind).join(", "),
+        // It's intended to keep `src` the last attribute because React updates
+        // attributes in order. If we keep `src` the first one, Safari will
+        // immediately start to fetch `src`, before `sizes` and `srcSet` are even
+        // updated by React. That causes multiple unnecessary requests if `srcSet`
+        // and `sizes` are defined.
+        // This bug cannot be reproduced in Chrome or Firefox.
+        src: loader({
+            config,
+            src,
+            quality,
+            width: widths[last]
+        })
+    };
+}
+function getImgProps(param, _state) {
+    let { src, sizes, unoptimized = false, priority = false, loading, className, quality, width, height, fill = false, style, overrideSrc, onLoad, onLoadingComplete, placeholder = "empty", blurDataURL, fetchPriority, layout, objectFit, objectPosition, lazyBoundary, lazyRoot, ...rest } = param;
+    const { imgConf, showAltText, blurComplete, defaultLoader } = _state;
+    let config;
+    let c = imgConf || _imageconfig.imageConfigDefault;
+    if ("allSizes" in c) {
+        config = c;
+    } else {
+        const allSizes = [
+            ...c.deviceSizes,
+            ...c.imageSizes
+        ].sort((a, b)=>a - b);
+        const deviceSizes = c.deviceSizes.sort((a, b)=>a - b);
+        config = {
+            ...c,
+            allSizes,
+            deviceSizes
+        };
+    }
+    if (typeof defaultLoader === "undefined") {
+        throw new Error("images.loaderFile detected but the file is missing default export.\nRead more: https://nextjs.org/docs/messages/invalid-images-config");
+    }
+    let loader = rest.loader || defaultLoader;
+    // Remove property so it's not spread on <img> element
+    delete rest.loader;
+    delete rest.srcSet;
+    // This special value indicates that the user
+    // didn't define a "loader" prop or "loader" config.
+    const isDefaultLoader = "__next_img_default" in loader;
+    if (isDefaultLoader) {
+        if (config.loader === "custom") {
+            throw new Error('Image with src "' + src + '" is missing "loader" prop.' + "\nRead more: https://nextjs.org/docs/messages/next-image-missing-loader");
+        }
+    } else {
+        // The user defined a "loader" prop or config.
+        // Since the config object is internal only, we
+        // must not pass it to the user-defined "loader".
+        const customImageLoader = loader;
+        loader = (obj)=>{
+            const { config: _, ...opts } = obj;
+            return customImageLoader(opts);
+        };
+    }
+    if (layout) {
+        if (layout === "fill") {
+            fill = true;
+        }
+        const layoutToStyle = {
+            intrinsic: {
+                maxWidth: "100%",
+                height: "auto"
+            },
+            responsive: {
+                width: "100%",
+                height: "auto"
+            }
+        };
+        const layoutToSizes = {
+            responsive: "100vw",
+            fill: "100vw"
+        };
+        const layoutStyle = layoutToStyle[layout];
+        if (layoutStyle) {
+            style = {
+                ...style,
+                ...layoutStyle
+            };
+        }
+        const layoutSizes = layoutToSizes[layout];
+        if (layoutSizes && !sizes) {
+            sizes = layoutSizes;
+        }
+    }
+    let staticSrc = "";
+    let widthInt = getInt(width);
+    let heightInt = getInt(height);
+    let blurWidth;
+    let blurHeight;
+    if (isStaticImport(src)) {
+        const staticImageData = isStaticRequire(src) ? src.default : src;
+        if (!staticImageData.src) {
+            throw new Error("An object should only be passed to the image component src parameter if it comes from a static image import. It must include src. Received " + JSON.stringify(staticImageData));
+        }
+        if (!staticImageData.height || !staticImageData.width) {
+            throw new Error("An object should only be passed to the image component src parameter if it comes from a static image import. It must include height and width. Received " + JSON.stringify(staticImageData));
+        }
+        blurWidth = staticImageData.blurWidth;
+        blurHeight = staticImageData.blurHeight;
+        blurDataURL = blurDataURL || staticImageData.blurDataURL;
+        staticSrc = staticImageData.src;
+        if (!fill) {
+            if (!widthInt && !heightInt) {
+                widthInt = staticImageData.width;
+                heightInt = staticImageData.height;
+            } else if (widthInt && !heightInt) {
+                const ratio = widthInt / staticImageData.width;
+                heightInt = Math.round(staticImageData.height * ratio);
+            } else if (!widthInt && heightInt) {
+                const ratio = heightInt / staticImageData.height;
+                widthInt = Math.round(staticImageData.width * ratio);
+            }
+        }
+    }
+    src = typeof src === "string" ? src : staticSrc;
+    let isLazy = !priority && (loading === "lazy" || typeof loading === "undefined");
+    if (!src || src.startsWith("data:") || src.startsWith("blob:")) {
+        // https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs
+        unoptimized = true;
+        isLazy = false;
+    }
+    if (config.unoptimized) {
+        unoptimized = true;
+    }
+    if (isDefaultLoader && src.endsWith(".svg") && !config.dangerouslyAllowSVG) {
+        // Special case to make svg serve as-is to avoid proxying
+        // through the built-in Image Optimization API.
+        unoptimized = true;
+    }
+    if (priority) {
+        fetchPriority = "high";
+    }
+    const qualityInt = getInt(quality);
+    if (false) {}
+    const imgStyle = Object.assign(fill ? {
+        position: "absolute",
+        height: "100%",
+        width: "100%",
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        objectFit,
+        objectPosition
+    } : {}, showAltText ? {} : {
+        color: "transparent"
+    }, style);
+    const backgroundImage = !blurComplete && placeholder !== "empty" ? placeholder === "blur" ? 'url("data:image/svg+xml;charset=utf-8,' + (0, _imageblursvg.getImageBlurSvg)({
+        widthInt,
+        heightInt,
+        blurWidth,
+        blurHeight,
+        blurDataURL: blurDataURL || "",
+        objectFit: imgStyle.objectFit
+    }) + '")' : 'url("' + placeholder + '")' // assume `data:image/`
+     : null;
+    let placeholderStyle = backgroundImage ? {
+        backgroundSize: imgStyle.objectFit || "cover",
+        backgroundPosition: imgStyle.objectPosition || "50% 50%",
+        backgroundRepeat: "no-repeat",
+        backgroundImage
+    } : {};
+    if (false) {}
+    const imgAttributes = generateImgAttrs({
+        config,
+        src,
+        unoptimized,
+        width: widthInt,
+        quality: qualityInt,
+        sizes,
+        loader
+    });
+    if (false) {}
+    const props = {
+        ...rest,
+        loading: isLazy ? "lazy" : loading,
+        fetchPriority,
+        width: widthInt,
+        height: heightInt,
+        decoding: "async",
+        className,
+        style: {
+            ...imgStyle,
+            ...placeholderStyle
+        },
+        sizes: imgAttributes.sizes,
+        srcSet: imgAttributes.srcSet,
+        src: overrideSrc || imgAttributes.src
+    };
+    const meta = {
+        unoptimized,
+        priority,
+        placeholder,
+        fill
+    };
+    return {
+        props,
+        meta
+    };
+} //# sourceMappingURL=get-img-props.js.map
+
+
+/***/ }),
+
+/***/ 8321:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* __next_internal_client_entry_do_not_use__  cjs */ 
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    default: function() {
+        return _default;
+    },
+    defaultHead: function() {
+        return defaultHead;
+    }
+});
+const _interop_require_default = __webpack_require__(9920);
+const _interop_require_wildcard = __webpack_require__(1452);
+const _jsxruntime = __webpack_require__(7437);
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(2265));
+const _sideeffect = /*#__PURE__*/ _interop_require_default._(__webpack_require__(5960));
+const _ampcontextsharedruntime = __webpack_require__(2901);
+const _headmanagercontextsharedruntime = __webpack_require__(6590);
+const _ampmode = __webpack_require__(687);
+const _warnonce = __webpack_require__(2301);
+function defaultHead(inAmpMode) {
+    if (inAmpMode === void 0) inAmpMode = false;
+    const head = [
+        /*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
+            charSet: "utf-8"
+        })
+    ];
+    if (!inAmpMode) {
+        head.push(/*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
+            name: "viewport",
+            content: "width=device-width"
+        }));
+    }
+    return head;
+}
+function onlyReactElement(list, child) {
+    // React children can be "string" or "number" in this case we ignore them for backwards compat
+    if (typeof child === "string" || typeof child === "number") {
+        return list;
+    }
+    // Adds support for React.Fragment
+    if (child.type === _react.default.Fragment) {
+        return list.concat(_react.default.Children.toArray(child.props.children).reduce((fragmentList, fragmentChild)=>{
+            if (typeof fragmentChild === "string" || typeof fragmentChild === "number") {
+                return fragmentList;
+            }
+            return fragmentList.concat(fragmentChild);
+        }, []));
+    }
+    return list.concat(child);
+}
+const METATYPES = [
+    "name",
+    "httpEquiv",
+    "charSet",
+    "itemProp"
+];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/ function unique() {
+    const keys = new Set();
+    const tags = new Set();
+    const metaTypes = new Set();
+    const metaCategories = {};
+    return (h)=>{
+        let isUnique = true;
+        let hasKey = false;
+        if (h.key && typeof h.key !== "number" && h.key.indexOf("$") > 0) {
+            hasKey = true;
+            const key = h.key.slice(h.key.indexOf("$") + 1);
+            if (keys.has(key)) {
+                isUnique = false;
+            } else {
+                keys.add(key);
+            }
+        }
+        // eslint-disable-next-line default-case
+        switch(h.type){
+            case "title":
+            case "base":
+                if (tags.has(h.type)) {
+                    isUnique = false;
+                } else {
+                    tags.add(h.type);
+                }
+                break;
+            case "meta":
+                for(let i = 0, len = METATYPES.length; i < len; i++){
+                    const metatype = METATYPES[i];
+                    if (!h.props.hasOwnProperty(metatype)) continue;
+                    if (metatype === "charSet") {
+                        if (metaTypes.has(metatype)) {
+                            isUnique = false;
+                        } else {
+                            metaTypes.add(metatype);
+                        }
+                    } else {
+                        const category = h.props[metatype];
+                        const categories = metaCategories[metatype] || new Set();
+                        if ((metatype !== "name" || !hasKey) && categories.has(category)) {
+                            isUnique = false;
+                        } else {
+                            categories.add(category);
+                            metaCategories[metatype] = categories;
+                        }
+                    }
+                }
+                break;
+        }
+        return isUnique;
+    };
+}
+/**
+ *
+ * @param headChildrenElements List of children of <Head>
+ */ function reduceComponents(headChildrenElements, props) {
+    const { inAmpMode } = props;
+    return headChildrenElements.reduce(onlyReactElement, []).reverse().concat(defaultHead(inAmpMode).reverse()).filter(unique()).reverse().map((c, i)=>{
+        const key = c.key || i;
+        if ( true && !inAmpMode) {
+            if (c.type === "link" && c.props["href"] && // TODO(prateekbh@): Replace this with const from `constants` when the tree shaking works.
+            [
+                "https://fonts.googleapis.com/css",
+                "https://use.typekit.net/"
+            ].some((url)=>c.props["href"].startsWith(url))) {
+                const newProps = {
+                    ...c.props || {}
+                };
+                newProps["data-href"] = newProps["href"];
+                newProps["href"] = undefined;
+                // Add this attribute to make it easy to identify optimized tags
+                newProps["data-optimized-fonts"] = true;
+                return /*#__PURE__*/ _react.default.cloneElement(c, newProps);
+            }
+        }
+        if (false) {}
+        return /*#__PURE__*/ _react.default.cloneElement(c, {
+            key
+        });
+    });
+}
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */ function Head(param) {
+    let { children } = param;
+    const ampState = (0, _react.useContext)(_ampcontextsharedruntime.AmpStateContext);
+    const headManager = (0, _react.useContext)(_headmanagercontextsharedruntime.HeadManagerContext);
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_sideeffect.default, {
+        reduceComponentsToState: reduceComponents,
+        headManager: headManager,
+        inAmpMode: (0, _ampmode.isInAmpMode)(ampState),
+        children: children
+    });
+}
+const _default = Head;
+if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
+    Object.defineProperty(exports.default, "__esModule", {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=head.js.map
+
+
+/***/ }),
+
+/***/ 1564:
+/***/ (function(__unused_webpack_module, exports) {
+
+/**
+ * A shared function, used on both client and server, to generate a SVG blur placeholder.
+ */ 
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "getImageBlurSvg", ({
+    enumerable: true,
+    get: function() {
+        return getImageBlurSvg;
+    }
+}));
+function getImageBlurSvg(param) {
+    let { widthInt, heightInt, blurWidth, blurHeight, blurDataURL, objectFit } = param;
+    const std = 20;
+    const svgWidth = blurWidth ? blurWidth * 40 : widthInt;
+    const svgHeight = blurHeight ? blurHeight * 40 : heightInt;
+    const viewBox = svgWidth && svgHeight ? "viewBox='0 0 " + svgWidth + " " + svgHeight + "'" : "";
+    const preserveAspectRatio = viewBox ? "none" : objectFit === "contain" ? "xMidYMid" : objectFit === "cover" ? "xMidYMid slice" : "none";
+    return "%3Csvg xmlns='http://www.w3.org/2000/svg' " + viewBox + "%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='" + std + "'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='" + std + "'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='" + preserveAspectRatio + "' style='filter: url(%23b);' href='" + blurDataURL + "'/%3E%3C/svg%3E";
+} //# sourceMappingURL=image-blur-svg.js.map
+
+
+/***/ }),
+
+/***/ 3938:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "ImageConfigContext", ({
+    enumerable: true,
+    get: function() {
+        return ImageConfigContext;
+    }
+}));
+const _interop_require_default = __webpack_require__(9920);
+const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(2265));
+const _imageconfig = __webpack_require__(7103);
+const ImageConfigContext = _react.default.createContext(_imageconfig.imageConfigDefault);
+if (false) {} //# sourceMappingURL=image-config-context.shared-runtime.js.map
+
+
+/***/ }),
+
+/***/ 7103:
+/***/ (function(__unused_webpack_module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    VALID_LOADERS: function() {
+        return VALID_LOADERS;
+    },
+    imageConfigDefault: function() {
+        return imageConfigDefault;
+    }
+});
+const VALID_LOADERS = [
+    "default",
+    "imgix",
+    "cloudinary",
+    "akamai",
+    "custom"
+];
+const imageConfigDefault = {
+    deviceSizes: [
+        640,
+        750,
+        828,
+        1080,
+        1200,
+        1920,
+        2048,
+        3840
+    ],
+    imageSizes: [
+        16,
+        32,
+        48,
+        64,
+        96,
+        128,
+        256,
+        384
+    ],
+    path: "/_next/image",
+    loader: "default",
+    loaderFile: "",
+    domains: [],
+    disableStaticImages: false,
+    minimumCacheTTL: 60,
+    formats: [
+        "image/webp"
+    ],
+    dangerouslyAllowSVG: false,
+    contentSecurityPolicy: "script-src 'none'; frame-src 'none'; sandbox;",
+    contentDispositionType: "inline",
+    remotePatterns: [],
+    unoptimized: false
+}; //# sourceMappingURL=image-config.js.map
+
+
+/***/ }),
+
+/***/ 5601:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+0 && (0);
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    default: function() {
+        return _default;
+    },
+    getImageProps: function() {
+        return getImageProps;
+    }
+});
+const _interop_require_default = __webpack_require__(9920);
+const _getimgprops = __webpack_require__(497);
+const _imagecomponent = __webpack_require__(8173);
+const _imageloader = /*#__PURE__*/ _interop_require_default._(__webpack_require__(1241));
+function getImageProps(imgProps) {
+    const { props } = (0, _getimgprops.getImgProps)(imgProps, {
+        defaultLoader: _imageloader.default,
+        // This is replaced by webpack define plugin
+        imgConf: {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/menudemo/_next/image/","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true}
+    });
+    // Normally we don't care about undefined props because we pass to JSX,
+    // but this exported function could be used by the end user for anything
+    // so we delete undefined props to clean it up a little.
+    for (const [key, value] of Object.entries(props)){
+        if (value === undefined) {
+            delete props[key];
+        }
+    }
+    return {
+        props
+    };
+}
+const _default = _imagecomponent.Image; //# sourceMappingURL=image-external.js.map
+
+
+/***/ }),
+
+/***/ 1241:
+/***/ (function(__unused_webpack_module, exports) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return _default;
+    }
+}));
+function defaultLoader(param) {
+    let { config, src, width, quality } = param;
+    if (false) {}
+    return config.path + "?url=" + encodeURIComponent(src) + "&w=" + width + "&q=" + (quality || 75) + ( false ? 0 : "");
+}
+// We use this to determine if the import is the default loader
+// or a custom loader defined by the user in next.config.js
+defaultLoader.__next_img_default = true;
+const _default = defaultLoader; //# sourceMappingURL=image-loader.js.map
+
+
+/***/ }),
+
+/***/ 291:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "RouterContext", ({
+    enumerable: true,
+    get: function() {
+        return RouterContext;
+    }
+}));
+const _interop_require_default = __webpack_require__(9920);
+const _react = /*#__PURE__*/ _interop_require_default._(__webpack_require__(2265));
+const RouterContext = _react.default.createContext(null);
+if (false) {} //# sourceMappingURL=router-context.shared-runtime.js.map
+
+
+/***/ }),
+
+/***/ 5960:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+Object.defineProperty(exports, "default", ({
+    enumerable: true,
+    get: function() {
+        return SideEffect;
+    }
+}));
+const _react = __webpack_require__(2265);
+const isServer = typeof window === "undefined";
+const useClientOnlyLayoutEffect = isServer ? ()=>{} : _react.useLayoutEffect;
+const useClientOnlyEffect = isServer ? ()=>{} : _react.useEffect;
+function SideEffect(props) {
+    const { headManager, reduceComponentsToState } = props;
+    function emitChange() {
+        if (headManager && headManager.mountedInstances) {
+            const headElements = _react.Children.toArray(Array.from(headManager.mountedInstances).filter(Boolean));
+            headManager.updateHead(reduceComponentsToState(headElements, props));
+        }
+    }
+    if (isServer) {
+        var _headManager_mountedInstances;
+        headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+        emitChange();
+    }
+    useClientOnlyLayoutEffect(()=>{
+        var _headManager_mountedInstances;
+        headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+        return ()=>{
+            var _headManager_mountedInstances;
+            headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.delete(props.children);
+        };
+    });
+    // We need to call `updateHead` method whenever the `SideEffect` is trigger in all
+    // life-cycles: mount, update, unmount. However, if there are multiple `SideEffect`s
+    // being rendered, we only trigger the method from the last one.
+    // This is ensured by keeping the last unflushed `updateHead` in the `_pendingUpdate`
+    // singleton in the layout effect pass, and actually trigger it in the effect pass.
+    useClientOnlyLayoutEffect(()=>{
+        if (headManager) {
+            headManager._pendingUpdate = emitChange;
+        }
+        return ()=>{
+            if (headManager) {
+                headManager._pendingUpdate = emitChange;
+            }
+        };
+    });
+    useClientOnlyEffect(()=>{
+        if (headManager && headManager._pendingUpdate) {
+            headManager._pendingUpdate();
+            headManager._pendingUpdate = null;
+        }
+        return ()=>{
+            if (headManager && headManager._pendingUpdate) {
+                headManager._pendingUpdate();
+                headManager._pendingUpdate = null;
+            }
+        };
+    });
+    return null;
+} //# sourceMappingURL=side-effect.js.map
+
+
+/***/ })
+
+}]);
