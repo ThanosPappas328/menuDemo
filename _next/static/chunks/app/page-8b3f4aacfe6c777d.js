@@ -257,15 +257,19 @@ const MenuItemCard = (param)=>{
 };
 /* harmony default export */ var menuItemCard = (MenuItemCard);
 
+// EXTERNAL MODULE: ./src/app/styles/bannerAd.module.css
+var bannerAd_module = __webpack_require__(5610);
+var bannerAd_module_default = /*#__PURE__*/__webpack_require__.n(bannerAd_module);
 ;// CONCATENATED MODULE: ./src/app/components/bannerAd.tsx
 // components/pages/punlishedMenu/bannerAd.tsx
 
 
  // Import Image from Next.js
+
 const BannerAd = (param)=>{
     let { imageUrl, altText } = param;
     return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-        className: "banner-ad",
+        className: (bannerAd_module_default()).bannerad,
         children: /*#__PURE__*/ (0,jsx_runtime.jsx)(api_image["default"], {
             src: imageUrl,
             alt: altText,
@@ -389,6 +393,14 @@ function App() {
     return /*#__PURE__*/ (0,jsx_runtime.jsx)(Home, {});
 }
 
+
+/***/ }),
+
+/***/ 5610:
+/***/ (function(module) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"bannerad":"bannerAd_bannerad__vXP7J"};
 
 /***/ }),
 
@@ -812,7 +824,7 @@ function IconBase(props) {
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, [613,699,648,971,23,744], function() { return __webpack_exec__(8114); });
+/******/ __webpack_require__.O(0, [376,699,648,971,23,744], function() { return __webpack_exec__(8114); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ _N_E = __webpack_exports__;
 /******/ }
